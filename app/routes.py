@@ -1,6 +1,7 @@
 from flask import render_template, flash, redirect, url_for
 from app import app
-from app.forms import LoginForm
+from app.forms import LoginForm ,NewAlarmForm
+from werkzeug.datastructures import MultiDict
 
 @app.route('/')
 @app.route('/index')
@@ -31,7 +32,7 @@ def login():
 def new():
 	form = NewAlarmForm()
 	if form.validate_on_submit():
-		flash('New alarm added at {}, on {}'.format(
-			form.time.data, form.dates.data))
+		flash('New alarm added at {}:{}, on {}'.format(
+			form.hours.data, form.minutes.data))
 		return redirect(url_for('index'))
 	return render_template('alarm.html', title='Add Alarms', form=form)

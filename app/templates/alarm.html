@@ -3,22 +3,13 @@
 {% block content %}
 	<h1>Add Alarm</h1>
 	<form action="" method="post">
-		{{ form.hidden_tag() }}
 		<p>
-			{{ form.time.label }}<br>
-			{{ form.time(size=32) }}<br>
-			<!-- {% for error in form.username.errors %}
-			<span style="color: red;">[{{ error }}]</span> -->
-			<!-- {% endfor %} -->
+			Time: 
+			<!-- {{ form.hours.label }}<br> -->
+			{{ form.hours(size=2) }}
+			<!-- {{ form.minutes.label }}<br> -->
+			{{ form.minutes(size=2) }}<br>
 		</p>
-		<p>
-			{{ form.dates.label }}<br>
-			{{ form.dates(size=32) }}<br>
-<!-- 			{% for error in form.password.errors %}
-			<span style="color: red;">[{{ error }}]</span>
-			{% endfor %} -->
-		</p>
-		<!-- <p>{{ form.remember_me() }} {{ form.remember_me.label }}</p> -->
 		<p>{{ form.submit() }}</p>
 	</form>
 {% endblock %}
