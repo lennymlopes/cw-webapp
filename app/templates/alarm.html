@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<h1>Add Alarm</h1>
+	<form action="" method="post">
+		<p>
+			Time: 
+			<!-- {{ form.hours.label }}<br> -->
+			{{ form.hours(size=2) }}
+			<!-- {{ form.minutes.label }}<br> -->
+			{{ form.minutes(size=2) }}<br>
+		</p>
+		<p>Days
+		<table>
+			<tr>
+				<td>{{ form.monday.label }}</td>
+				<td>{{ form.monday }}</td></tr>
+			<tr>
+				<td>{{ form.tuesday.label }}</td>
+				<td>{{ form.tuesday }}</td></tr>
+			<tr>
+				<td>{{ form.wednesday.label }}</td>
+				<td>{{ form.wednesday }}</td></tr>
+			<tr>
+				<td>{{ form.thursday.label }}</td>
+				<td>{{ form.thursday }}</td>
+			</tr>
+			<tr>
+				<td>{{ form.friday.label }}</td>
+				<td>{{ form.friday }}</td>
+			</tr>
+			<tr>
+				<td>{{ form.saturday.label }}</td>
+				<td>{{ form.saturday }}</td>
+			</tr>
+			<tr>
+				<td>{{ form.sunday.label }}</td>
+				<td>{{ form.sunday }}</td>
+			</tr>
+		</table>
+		</p>
+		<p> {{ form.repeat.label }} {{ form.repeat}}</p>
+		<p>{{ form.submit() }}</p>
+	</form>
+{% endblock %}
