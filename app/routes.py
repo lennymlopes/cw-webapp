@@ -32,7 +32,7 @@ def login():
 def new():
 	form = NewAlarmForm()
 	if form.validate_on_submit():
-		flash('New alarm added at {}:{}, on {}'.format(
+		flash('New alarm added at {}: {}, on '.format(
 			form.hours.data, form.minutes.data))
 		return redirect(url_for('index'))
 	return render_template('alarm.html', title='Add Alarms', form=form)

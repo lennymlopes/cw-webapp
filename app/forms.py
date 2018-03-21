@@ -13,8 +13,9 @@ class LoginForm(FlaskForm):
 	submit = SubmitField('Sign In')
 
 class NewAlarmForm(FlaskForm):
-	hours = IntegerField('Hour', validators=[NumberRange(min=0, max=23, message='lol')])
-	minutes = IntegerField('Minute', validators=[NumberRange(min=0, max=59, message='lol')])
+
+	hours = IntegerField('Hour', validators=[NumberRange(min=0, max=23),DataRequired()])
+	minutes = IntegerField('Minute', validators=[NumberRange(min=0, max=59),DataRequired()])
 	#days = SelectMultipleField('Days', choices=[('1','Monday'),('2','Tuesday'),('3','Tuesday'),('4','Tuesday'),('5','Tuesday')] )
 	#alt_days = RadioField('Days', choices=[('1','Monday'),('2','Tuesday'),('3','Tuesday'),('4','Tuesday'),('5','Tuesday')] )
 	monday = BooleanField('Monday')
@@ -24,5 +25,9 @@ class NewAlarmForm(FlaskForm):
 	friday = BooleanField('Friday')
 	saturday = BooleanField('Saturday')
 	sunday = BooleanField('Sunday')
-	repeat = RadioField('Repeat', choices=[('0','never'),('1','daily'),('2','weekly')])
+
+	repeat = RadioField('Repeat', choices=[('0','never'),('1','weekly'),('2','biweekly')])
 	submit = SubmitField('Save')
+
+
+
