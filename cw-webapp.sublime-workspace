@@ -1,0 +1,741 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Sele",
+				"SelectMultipleField"
+			],
+			[
+				"New",
+				"NewAlarmForm"
+			],
+			[
+				"bo",
+				"border-bottom"
+			],
+			[
+				"bor",
+				"border-top"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"bore",
+				"border"
+			],
+			[
+				"shad",
+				"box-shadow"
+			],
+			[
+				"col",
+				"col-xs-12"
+			],
+			[
+				"p",
+				"padding"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"u",
+				"uppercase"
+			],
+			[
+				"tex-tr",
+				"text-transform"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"ali",
+				"align-self"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"re",
+				"required\tAttr"
+			],
+			[
+				"Bu",
+				"buttstuff"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"ac",
+				"action\tAttr"
+			],
+			[
+				"h",
+				"h1\tTag"
+			],
+			[
+				"ROW",
+				"ROW2COL"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/routes.py",
+			"settings":
+			{
+				"buffer_size": 1142,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/templates/base.html",
+			"settings":
+			{
+				"buffer_size": 657,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/templates/alarm.html",
+			"settings":
+			{
+				"buffer_size": 1030,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/forms.py",
+			"settings":
+			{
+				"buffer_size": 1402,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Script Builder"
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				"XeLaTeX"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				"Syntax Check"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 884.0,
+		"last_filter": "run",
+		"selected_items":
+		[
+			[
+				"run",
+				"SublimeREPL: Python - RUN current file"
+			],
+			[
+				"repl py",
+				"SublimeREPL: Python - RUN current file"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"Package Control: rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: install ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Coins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 1160.0
+	},
+	"console":
+	{
+		"height": 655.0,
+		"history":
+		[
+			"makeglossaries zhawDocument",
+			"makeglossaries",
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/webapp/cw-webapp"
+	],
+	"file_history":
+	[
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/webapp/cw-webapp/app/static/style.css",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/webapp/cw-webapp/app/templates/index.html",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/webapp/cw-webapp/app/templates/base.html",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/webapp/cw-webapp/app/templates/login.html",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/webapp/cw-webapp/.gitignore",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/clusterwink/clusterwink_pi/app/routes.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/clusterwink/clusterwink_pi/app/templates/base.html",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/websockets/examples/3-dataset/index.html",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/dataset/examples/1-console/console.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/websockets/examples/3-dataset/2-alarm/alarm.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/dataset/examples/2-alarm/alarm.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/clusterwink/clusterwink_pi/app/templates/index.html",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/webapp/app/templates/base.html",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/clusterwink/clusterwink_pi/requirements.txt",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/clusterwink/clusterwink_pi/.gitignore",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/clusterwink/clusterwink_pi/clusterwink.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/clusterwink/clusterwink_pi/app/__init__.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/.gitignore",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/alarm/test/alarm.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/webapp/app/templates/index.html",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/webapp/app/__init__.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/webapp/app/routes.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/webapp/webapp.py",
+		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/7/gallery/index.html",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/microblog/app/templates/register.html",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/microblog/app/forms.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/microblog/app/templates/login.html",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/microblog/app/routes.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/microblog/app/models.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/microblog/app/templates/index.html",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/microblog/app/templates/base.html",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/microblog/app/__init__.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/microblog/microblog.py",
+		"/C/Users/Lenny Lopes/Drive/studies/iaeste/moeglicher-zeitraum.txt",
+		"/C/Users/Lenny Lopes/Drive/work/moderncv-template/english/resume.tex",
+		"/C/Users/Lenny Lopes/Drive/studies/international-profile/latex/resume/resume/summary.tex",
+		"/C/Users/Lenny Lopes/Drive/studies/international-profile/latex/resume/cv/committees.tex",
+		"/C/Users/Lenny Lopes/Drive/studies/international-profile/latex/resume/cv/education.tex",
+		"/C/Users/Lenny Lopes/Drive/studies/international-profile/latex/resume/cv/experience.tex",
+		"/C/Users/Lenny Lopes/Drive/studies/international-profile/latex/resume/cv/extracurricular.tex",
+		"/C/Users/Lenny Lopes/Drive/studies/international-profile/latex/resume/cv/honors.tex",
+		"/C/Users/Lenny Lopes/Drive/studies/international-profile/latex/resume/cv/presentation.tex",
+		"/C/Users/Lenny Lopes/Drive/studies/international-profile/latex/resume/cv/skills.tex",
+		"/C/Users/Lenny Lopes/Drive/studies/international-profile/latex/resume/cv/writing.tex",
+		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/7/grid/index.html",
+		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/7/navbar/index.html",
+		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/7/basics/index.html",
+		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/6/blog/index.html",
+		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/6/blog/style.css",
+		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/6/photo-grid/index.html",
+		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/6/photo-grid/style.css",
+		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/6/photo-grid/imageLinks.html",
+		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/6/playground/fonts.html",
+		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/6/tictactoe/style.css",
+		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/6/tictactoe/board.html",
+		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/6/playground/fonts.css",
+		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/6/04_Box_Model/boxmodel.html",
+		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/6/04_Box_Model/style.css",
+		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/notes.txt",
+		"/C/Users/Lenny Lopes/Drive/private/projects/electronics/pHAT-template/.gitignore",
+		"/C/Users/Lenny Lopes/Desktop/clusterwink/clusterwink_doxygen/faba/doxyOutput/html/index.html",
+		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/5/selector.css",
+		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/5/aboutme.html",
+		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/5/stylesheet.css",
+		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/5/specificity.html",
+		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/5/selector.html",
+		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/specificity.html",
+		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/4/table.html",
+		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/4/pokemon.html",
+		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/4/forms.html",
+		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/4/login.html",
+		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/4/form-ex.html",
+		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/3/html-basics/boilerplate.html",
+		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/3/html-basics/list_solution.html",
+		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/3/html-basics/firstpage.html",
+		"/D/config.txt",
+		"/C/Users/Lenny Lopes/Desktop/config.txt",
+		"/C/Users/Lenny Lopes/Desktop/flaskr/__init__.py",
+		"/C/Users/Lenny Lopes/Desktop/flaskr/MANIFEST.in",
+		"/C/Users/Lenny Lopes/Desktop/flaskr/setup.py",
+		"/C/Users/Lenny Lopes/Desktop/Sophia_owl.txt",
+		"/C/Users/Lenny Lopes/Desktop/final.txt",
+		"/C/Users/Lenny Lopes/Desktop/flaskr/flaskr/flaskr.py",
+		"/C/Users/Lenny Lopes/Desktop/logo.txt",
+		"/C/Users/Lenny Lopes/Desktop/flaskr/flaskr/schema.sql",
+		"/C/Users/Lenny Lopes/Desktop/final.jpg",
+		"/C/Users/Lenny Lopes/Google Drive/studies/semester/semester3/etp1/etp1-project/Documents/clusterwink_rev1_adjustments.txt",
+		"/C/Users/Lenny Lopes/Google Drive/private/projects/electronics/synth/notes.txt",
+		"/C/Users/Lenny Lopes/Google Drive/studies/semester/semester3/etp1/etp1-project/Documentation/todo.txt",
+		"/C/Users/Lenny Lopes/Desktop/flask/flaskhello.py",
+		"/C/Users/Lenny Lopes/Downloads/ddlc/DDLC-1.1.0-pc/characters/yuri.chr",
+		"/C/Users/Lenny Lopes/Google Drive/studies/semester/semester3/el3/script/el3-formulary/el3.tex",
+		"/C/Users/Lenny Lopes/Desktop/cmd.cmd",
+		"/C/Users/Lenny Lopes/Desktop/info.html",
+		"/C/Program Files/KiCad/share/kicad/template/module-template/meta/info.html",
+		"/C/Users/Lenny Lopes/Desktop/Desktop/el3/hhrt/6_Drehstrom/Uebungen/EL3_Ueb5_1_Drehstrom.tex",
+		"/C/Users/Lenny Lopes/Desktop/NO$GBA_2.6a/README.TXT",
+		"/C/Users/Lenny Lopes/Google Drive/studies/semester/semester3/sisy1/EXERCISES/SiSy_test1_chap1n2/README.txt",
+		"/C/vDos/autoexec.txt",
+		"/C/Users/Lenny Lopes/Documents/LTspiceXVII/lib/cmp/standard.bjt",
+		"/C/Users/Lenny Lopes/Desktop/SiSy_test1_chap1n2/EX1/test_chap1_ex1.tex",
+		"/C/Users/Lenny Lopes/Desktop/SiSy_test1_chap1n2/EX3/test_chap1_ex3.tex",
+		"/C/Users/Lenny Lopes/Desktop/SiSy_test1_chap1n2/EX5/test_chap1_ex5_n.tex",
+		"/C/Users/Lenny Lopes/Desktop/SiSy_test1_chap1n2/SiSy_test1_chap1n2_lopes.tex",
+		"/C/Users/Lenny Lopes/Google Drive/studies/semester/semester3/etp1/etp1-project/Documentation/latex/zhawDocument.tex",
+		"/C/Users/Lenny Lopes/Google Drive/studies/semester/semester3/etp1/etp1-project/Documentation/latex/glossaryentries.tex",
+		"/C/Users/Lenny Lopes/Downloads/rgb_new.txt",
+		"/C/Users/Lenny Lopes/Google Drive/studies/semester/semester3/etp1/etp1-project/Documentation/latex/zhawreprt.cls",
+		"/C/Users/Lenny Lopes/Google Drive/studies/semester/semester3/etp1/etp1-project/Documentation/latex/zhawDocument.bbl",
+		"/C/Users/Lenny Lopes/Desktop/synth/notes.txt",
+		"/C/Users/Lenny Lopes/Downloads/testing.tex",
+		"/C/Users/Lenny Lopes/Google Drive/studies/semester/semester3/etp1/etp1-project/Documentation/latex/zhawSetup.tex",
+		"/C/Users/Lenny Lopes/Google Drive/studies/semester/semester3/etp1/etp1-project/Documentation/latex/packages.tex",
+		"/C/Users/Lenny Lopes/AppData/Roaming/Sublime Text 3/Packages/LaTeXTools/LaTeXTools.sublime-settings",
+		"/C/Users/Lenny Lopes/AppData/Roaming/Sublime Text 3/Packages/User/LaTeXTools.sublime-settings",
+		"/C/Users/Lenny Lopes/Google Drive/studies/semester/semester3/etp1/etp1-project/Documentation/appendix/known_issues.txt",
+		"/C/Users/Lenny Lopes/Downloads/scholololo.txt",
+		"/C/Users/Lenny Lopes/Google Drive/studies/semester/semester3/etp1/etp1-project/Documentation/calculations_mario.tex",
+		"/c/texlive/2017/texmf-dist/tex/latex/siunitx/siunitx.sty",
+		"/C/Users/Lenny Lopes/Desktop/test/test.tex",
+		"/C/Users/Lenny Lopes/Desktop/latex/zhawDocument.tex",
+		"/C/Users/Lenny Lopes/Desktop/latex/packages.tex",
+		"/C/Users/Lenny Lopes/Desktop/latex/.latexmkrc",
+		"/C/Users/Lenny Lopes/Desktop/latex/glossaryentries.tex",
+		"/C/Users/Lenny Lopes/Desktop/latex/zhawGanttDiagram.tex",
+		"/C/Users/Lenny Lopes/Google Drive/studies/semester/semester3/etp1/etp1-project/Documentation/layout.txt",
+		"/C/Users/Lenny Lopes/Desktop/mario-korrektur.txt",
+		"/C/Users/Lenny Lopes/Desktop/latex/zhawreprt.cls"
+	],
+	"find":
+	{
+		"height": 61.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\t\t\t<tr>\n\t\t\t\t<td>{{ form.saturday.label }}</td>\n\t\t\t\t<td>{{ form.saturday }}</td>\n\t\t\t</tr>",
+			"menu_actions",
+			"user",
+			"sections",
+			"Up",
+			"box",
+			"h1",
+			"<tr>\n\t\t\t<td></td>\n\t\t\t<td></td>\n\t\t\t<td></td>\n\t\t</tr>",
+			"<td></td>",
+			" * ",
+			"sunrise",
+			"></",
+			"b>",
+			"dogs",
+			"cats",
+			"></",
+			"hdmi",
+			"multi",
+			"communication",
+			" MCU ",
+			" mcu ",
+			"tests",
+			"0.92",
+			"[h]",
+			"figure}[",
+			"width=0.95",
+			"includegr",
+			"angle=90",
+			"width=0.9",
+			"calc",
+			"includegr",
+			"cluster",
+			"gls",
+			"table",
+			"hardware",
+			"implementation",
+			"os",
+			"set",
+			"font",
+			"mainreferee",
+			"german",
+			"2016",
+			"path",
+			"texify",
+			"B1",
+			"includegr",
+			"nag",
+			"1n5*",
+			"AREA",
+			"MOVS* R11",
+			"MOVS ",
+			"MOVS R1",
+			"MOVS R1,",
+			"MOVS R1, #0xfe"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"main_menu_actions",
+			"card",
+			"h2",
+			"",
+			"strong>",
+			"doggos",
+			"puppers",
+			"0.9",
+			"[!hb]",
+			"width=0.92",
+			"angle=270",
+			"width=0.95",
+			"2017"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/routes.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1142,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								651,
+								651
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/templates/base.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 657,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								657,
+								657
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/templates/alarm.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1030,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								309,
+								309
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 117.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/forms.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1402,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								398,
+								398
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 61.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 114.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.latextools":
+	{
+		"height": 358.0
+	},
+	"pinned_build_system": "",
+	"project": "cw-webapp.sublime-project",
+	"replace":
+	{
+		"height": 285.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 375.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
