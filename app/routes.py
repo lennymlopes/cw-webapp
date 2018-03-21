@@ -26,3 +26,12 @@ def login():
 			form.username.data, form.remember_me.data))
 		return redirect(url_for('index'))
 	return render_template('login.html', title='Sign In', form=form)
+
+@app.route('/new', methods=['GET', 'POST'])
+def new():
+	form = NewAlarmForm()
+	if form.validate_on_submit():
+		flash('New alarm added at {}, on {}'.format(
+			form.time.data, form.dates.data))
+		return redirect(url_for('index'))
+	return render_template('alarm.html', title='Add Alarms', form=form)
