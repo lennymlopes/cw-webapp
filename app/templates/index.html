@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 
 {% block app_content %}
-<!--     <h1>Hi, {{ current_user.username }}!</h1>
-    {% for post in posts %}
-    <div><p>{{ post.author.username }} says: <b>{{ post.body }}</b></p></div>
-    {% endfor %} -->
-    {% for alarm in alarms %}
-    <div><p>{{ alarm.label }}<br>{{ alarm.hour }}:{{ alarm.minute }} repeats: <b>{{ alarm.repeat }}</b></p></div>
-    {% endfor %}
+
+	{% for alarm in alarms %}
+		<div class="col-md-4 alarm">
+			<h1>{{ alarm.hour }}:{{ alarm.minute }}</h1>
+			<hr>
+			<p>{{ alarm.label }}<br> repeats: <b>{{ alarm.repeat }}</b></p></div>
+	{% endfor %}
 {% endblock %}
