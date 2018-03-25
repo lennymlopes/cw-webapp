@@ -45,6 +45,7 @@ class NewAlarmForm(FlaskForm):
 	saturday = BooleanField('Saturday')
 	sunday = BooleanField('Sunday')
 	repeat = RadioField('Repeat', choices=[('never','never'),('weekly','weekly'),('biweekly','biweekly')])
+	label = StringField('Label')
 	submit = SubmitField('Save')
 
 class SettingsForm(FlaskForm):

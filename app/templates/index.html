@@ -6,6 +6,6 @@
     <div><p>{{ post.author.username }} says: <b>{{ post.body }}</b></p></div>
     {% endfor %}
     {% for alarm in alarms %}
-    <div><p>{{ alarm.hour }}:{{ alarm.minute }} repeats: <b>{{ alarm.repeat }}</b></p></div>
+    <div><p>{{ alarm.label }}<br>{{ alarm.hour }}:{{ alarm.minute }} repeats: <b>{{ alarm.repeat }}</b></p></div>
     {% endfor %}
 {% endblock %}
