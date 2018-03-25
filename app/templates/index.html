@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Hi, {{ current_user.username }}!</h1>
+<!--     <h1>Hi, {{ current_user.username }}!</h1>
     {% for post in posts %}
     <div><p>{{ post.author.username }} says: <b>{{ post.body }}</b></p></div>
-    {% endfor %}
+    {% endfor %} -->
     {% for alarm in alarms %}
     <div><p>{{ alarm.label }}<br>{{ alarm.hour }}:{{ alarm.minute }} repeats: <b>{{ alarm.repeat }}</b></p></div>
     {% endfor %}
