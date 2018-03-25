@@ -47,6 +47,12 @@ class NewAlarmForm(FlaskForm):
 	repeat = RadioField('Repeat', choices=[('0','never'),('1','weekly'),('2','biweekly')])
 	submit = SubmitField('Save')
 
+class SettingsForm(FlaskForm):
+	#theme = BooleanField('Dark')
+	advanced = BooleanField('Advanced Mode')
+	time_format = BooleanField('Time Format')
+	submit = SubmitField('Save')
+
 
 
 

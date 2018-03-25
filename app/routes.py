@@ -1,6 +1,6 @@
 from flask import render_template, flash, redirect, url_for, request
 from app import app, db
-from app.forms import LoginForm ,NewAlarmForm, RegistrationForm
+from app.forms import LoginForm ,NewAlarmForm, RegistrationForm, SettingsForm
 from werkzeug.datastructures import MultiDict
 from werkzeug.urls import url_parse
 from flask_login import current_user, login_user, logout_user, login_required
@@ -78,9 +78,8 @@ def register():
 @app.route('/settings', methods=['GET', 'POST'])
 @login_required
 def settings():
-	# form = NewAlarmForm()
-	# if form.validate_on_submit():
-	# 	flash('New alarm added at {}: {}, on '.format(
-	# 		form.hours.data, form.minutes.data))
-	# 	return redirect(url_for('index'))
-	return render_template('settings.html', title='Settings')#, form=form)
+	form = SettingsForm()
+	if form.validate_on_submit():
+		flash('Settings Saved')
+		return redirect(url_for('index'))
+	return render_template('settings.html', title='Settings', form=form)
