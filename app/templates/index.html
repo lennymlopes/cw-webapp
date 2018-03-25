@@ -6,7 +6,7 @@
 		<div class="col-lg-4 col-md-6 ">
 			<div class="card">
 				<div class="card-body">
-					<h1>{{ alarm.hour }}:{{ alarm.minute }}</h1>
+					<h1>{{ "%02d" % alarm.hour }}:{{ "%02d" % alarm.minute }}</h1>
 					<hr>
 					<p>{% if alarm.label.data == None %}Alarm{% else %}{{ alarm.label }}{% endif %}
 						<br> repeats: <b>{{ alarm.repeat }}</b></p>
