@@ -4,7 +4,7 @@ from app.forms import LoginForm ,NewAlarmForm, RegistrationForm, SettingsForm
 from werkzeug.datastructures import MultiDict
 from werkzeug.urls import url_parse
 from flask_login import current_user, login_user, logout_user, login_required
-from app.models import User
+from app.models import User, Alarm
 
 @app.route('/')
 @app.route('/index')
@@ -80,6 +80,9 @@ def register():
 def settings():
 	form = SettingsForm()
 	if form.validate_on_submit():
+		alarm = Alarm(hour=form.hours.data, minute=form.minutes.data, repeat=form.repeat.data)
+		db.session.add(alarm)
+		db.session.commit()
 		flash('Settings Saved')
 		return redirect(url_for('index'))
 	return render_template('settings.html', title='Settings', form=form)
