@@ -4,7 +4,7 @@ from app.forms import LoginForm ,NewAlarmForm, RegistrationForm, SettingsForm
 from werkzeug.datastructures import MultiDict
 from werkzeug.urls import url_parse
 from flask_login import current_user, login_user, logout_user, login_required
-from app.models import User
+from app.models import User, Alarm
 
 @app.route('/')
 @app.route('/index')
@@ -21,7 +21,8 @@ def index():
 			'body': 'The Avengers movie was so cool!'
 		}
 	]
-	return render_template('index.html', title='Home', posts=posts)
+	alarms = Alarm.query.all()
+	return render_template('index.html', title='Home', posts=posts, alarms=alarms)
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -54,8 +55,11 @@ def logout():
 def new():
 	form = NewAlarmForm()
 	if form.validate_on_submit():
-		flash('New alarm added at {}: {}, on '.format(
-			form.hours.data, form.minutes.data))
+		alarm = Alarm(hour=form.hours.data, minute=form.minutes.data, repeat=form.repeat.data, label=form.label.data)
+		db.session.add(alarm)
+		db.session.commit()
+		flash('New alarm "{}"added at {}:{}, on '.format(
+			form.label.data, form.hours.data, form.minutes.data))
 		return redirect(url_for('index'))
 	return render_template('alarm.html', title='Add Alarms', form=form)
 
