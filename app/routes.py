@@ -21,7 +21,8 @@ def index():
 			'body': 'The Avengers movie was so cool!'
 		}
 	]
-	return render_template('index.html', title='Home', posts=posts)
+	alarms = Alarm.query.all()
+	return render_template('index.html', title='Home', posts=posts, alarms=alarms)
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -54,6 +55,9 @@ def logout():
 def new():
 	form = NewAlarmForm()
 	if form.validate_on_submit():
+		alarm = Alarm(hour=form.hours.data, minute=form.minutes.data, repeat=form.repeat.data)
+		db.session.add(alarm)
+		db.session.commit()
 		flash('New alarm added at {}: {}, on '.format(
 			form.hours.data, form.minutes.data))
 		return redirect(url_for('index'))
@@ -80,9 +84,6 @@ def register():
 def settings():
 	form = SettingsForm()
 	if form.validate_on_submit():
-		alarm = Alarm(hour=form.hours.data, minute=form.minutes.data, repeat=form.repeat.data)
-		db.session.add(alarm)
-		db.session.commit()
 		flash('Settings Saved')
 		return redirect(url_for('index'))
 	return render_template('settings.html', title='Settings', form=form)
