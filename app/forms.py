@@ -48,7 +48,7 @@ class NewAlarmForm(FlaskForm):
 	submit = SubmitField('Save')
 
 class SettingsForm(FlaskForm):
-	#theme = BooleanField('Dark')
+	theme = BooleanField('Theme')
 	advanced = BooleanField('Advanced Mode')
 	time_format = BooleanField('Time Format')
 	submit = SubmitField('Save')
