@@ -73,3 +73,14 @@ def register():
 		flash('Congratulations, you are now a registered user!')
 		return redirect(url_for('login'))
 	return render_template('register.html', title='Register', form=form)
+
+
+@app.route('/settings', methods=['GET', 'POST'])
+@login_required
+def settings():
+	# form = NewAlarmForm()
+	# if form.validate_on_submit():
+	# 	flash('New alarm added at {}: {}, on '.format(
+	# 		form.hours.data, form.minutes.data))
+	# 	return redirect(url_for('index'))
+	return render_template('settings.html', title='Settings')#, form=form)
