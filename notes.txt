@@ -1,0 +1,19 @@
+settings
+	options to choose between simple and advanced mode (in settings or per alarm?)
+	setting to choose between 24h time and am/pm
+	color schemes
+
+
+
+
+Options for Alarms (Database)
+
+	ID					- alarm nr
+	TIME				- alarm time
+	ACTIVE			- on/off
+	REPEAT			- daily/weekly/bi-weekly/monthly
+	DAYS				- mon/tue/wed/...
+	LABEL				- notes
+	SUNRISE			- on/off
+	SUNR. DUR		- duration of sunrise
+	RADIO				- on/off/station?

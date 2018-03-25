@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<h1>Settings</h1>
+	<form action="" method="post">
+		{{ form.hidden_tag() }}
+		</p>
+		<p> {{ form.theme.label }} {{ form.theme}}</p>
+		<p> {{ form.advanced.label }} {{ form.advanced}}</p>
+		<p> {{ form.time_format.label }} {{ form.time_format}}</p>
+		<p>{{ form.submit() }}</p>
+	</form>
+{% endblock %}
