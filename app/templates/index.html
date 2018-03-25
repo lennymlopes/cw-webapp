@@ -12,7 +12,7 @@
 						{{ alarm.label if alarm.label else 'Alarm' }}<br> 
 						repeats: <b>{{ alarm.repeat }}</b><br>
 						{{ alarm.monday}}
-						{% if alarm.monday.data %} <div class="round on">M</div>
+						{% if alarm.monday is sameas True %} <div class="round on">M</div>
 						{% else %} <div class="round off">M</div>
 						{% endif %}
 					</p>
