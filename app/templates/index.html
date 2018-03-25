@@ -8,8 +8,10 @@
 				<div class="card-body">
 					<h1>{{ "%02d" % alarm.hour }}:{{ "%02d" % alarm.minute }}</h1>
 					<hr>
-					<p>{% if alarm.label.data == None %}Alarm{% else %}{{ alarm.label }}{% endif %}
-						<br> repeats: <b>{{ alarm.repeat }}</b></p>
+					<p>
+						{{ alarm.label if alarm.label else 'Alarm' }}<br> 
+						repeats: <b>{{ alarm.repeat }}</b>
+					</p>
 				</div>
 			</div>
 		</div>
