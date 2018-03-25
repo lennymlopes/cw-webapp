@@ -55,9 +55,17 @@ def logout():
 def new():
 	form = NewAlarmForm()
 	if form.validate_on_submit():
-		alarm = Alarm(hour=form.hours.data, minute=form.minutes.data, repeat=form.repeat.data, \
-						label=form.label.data,\
-						monday=form.monday.data)
+		alarm = Alarm(hour=form.hours.data,\
+									minute=form.minutes.data,\
+									repeat=form.repeat.data,\
+									label=form.label.data,\
+									monday=form.monday.data,\
+									tuesday=form.tuesday.data,\
+									wednesday=form.wednesday.data,\
+									thursday=form.thursday.data,\
+									friday=form.friday.data,\
+									saturday=form.saturday.data,\
+									sunday=form.sunday.data)
 		db.session.add(alarm)
 		db.session.commit()
 		flash('New alarm "{}"added at {}:{}, on '.format(
