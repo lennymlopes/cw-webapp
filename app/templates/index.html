@@ -3,9 +3,18 @@
 {% block app_content %}
 
 	{% for alarm in alarms %}
-		<div class="col-md-4 alarm">
+		<div class="col-lg-4 col-md-6 ">
+			<div class="card">
+				<div class="card-body">
+					<h1>{{ alarm.hour }}:{{ alarm.minute }}</h1>
+					<hr>
+					<p>{{ alarm.label }}<br> repeats: <b>{{ alarm.repeat }}</b></p>
+				</div>
+			</div>
+		</div>
+<!-- 		<div class="col-md-4 alarm">
 			<h1>{{ alarm.hour }}:{{ alarm.minute }}</h1>
 			<hr>
-			<p>{{ alarm.label }}<br> repeats: <b>{{ alarm.repeat }}</b></p></div>
+			<p>{{ alarm.label }}<br> repeats: <b>{{ alarm.repeat }}</b></p></div> -->
 	{% endfor %}
 {% endblock %}
