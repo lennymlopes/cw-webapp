@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"s",
+				"saturday"
+			],
+			[
+				"fr",
+				"friday"
+			],
+			[
 				"Sele",
 				"SelectMultipleField"
 			],
@@ -112,36 +120,18 @@
 	"buffers":
 	[
 		{
-			"file": "app/routes.py",
+			"file": "app/models.py",
 			"settings":
 			{
-				"buffer_size": 1142,
+				"buffer_size": 664,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/templates/base.html",
+			"file": "notes.txt",
 			"settings":
 			{
-				"buffer_size": 657,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/templates/alarm.html",
-			"settings":
-			{
-				"buffer_size": 1030,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/forms.py",
-			"settings":
-			{
-				"buffer_size": 1402,
+				"buffer_size": 415,
 				"line_ending": "Windows"
 			}
 		}
@@ -237,7 +227,7 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 884.0,
+		"height": 443.0,
 		"last_filter": "run",
 		"selected_items":
 		[
@@ -274,7 +264,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 1160.0
+		"width": 789.0
 	},
 	"console":
 	{
@@ -297,10 +287,12 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/webapp/cw-webapp"
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/webapp/cw-webapp",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/webapp/cw-webapp/app"
 	],
 	"file_history":
 	[
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/webapp/cw-webapp/requirements.txt",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/webapp/cw-webapp/app/static/style.css",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/webapp/cw-webapp/app/templates/index.html",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/webapp/cw-webapp/app/templates/base.html",
@@ -427,8 +419,7 @@
 		"/C/Users/Lenny Lopes/Desktop/latex/glossaryentries.tex",
 		"/C/Users/Lenny Lopes/Desktop/latex/zhawGanttDiagram.tex",
 		"/C/Users/Lenny Lopes/Google Drive/studies/semester/semester3/etp1/etp1-project/Documentation/layout.txt",
-		"/C/Users/Lenny Lopes/Desktop/mario-korrektur.txt",
-		"/C/Users/Lenny Lopes/Desktop/latex/zhawreprt.cls"
+		"/C/Users/Lenny Lopes/Desktop/mario-korrektur.txt"
 	],
 	"find":
 	{
@@ -446,6 +437,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			")\n",
 			"\t\t\t<tr>\n\t\t\t\t<td>{{ form.saturday.label }}</td>\n\t\t\t\t<td>{{ form.saturday }}</td>\n\t\t\t</tr>",
 			"menu_actions",
 			"user",
@@ -530,57 +522,41 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/routes.py",
+					"file": "app/models.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1142,
+						"buffer_size": 664,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								651,
-								651
+								46,
+								46
+							],
+							[
+								92,
+								92
+							],
+							[
+								154,
+								154
+							],
+							[
+								214,
+								214
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/templates/base.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 657,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								657,
-								657
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -588,61 +564,39 @@
 					},
 					"stack_index": 0,
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
 				{
-					"buffer": 2,
-					"file": "app/templates/alarm.html",
+					"buffer": 1,
+					"file": "notes.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1030,
+						"buffer_size": 415,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								309,
-								309
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 117.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/forms.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1402,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								398,
-								398
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -665,11 +619,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.691630591631,
 			1.0
 		],
 		"rows":
@@ -730,7 +691,7 @@
 	{
 	},
 	"show_minimap": true,
-	"show_open_files": true,
+	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 375.0,
