@@ -6,18 +6,23 @@
 		<div class="col-lg-4 col-md-6 ">
 			<div class="card">
 				<div class="card-body">
-					<h1 data-toggle="collapse" data-target="#card_{{ alarm.id }}">{{ "%02d" % alarm.hour }}:{{ "%02d" % alarm.minute }}</h1>
+					<h1 data-toggle="collapse" data-target="#card_{{ alarm.id }}" class="time">{{ "%02d" % alarm.hour }}:{{ "%02d" % alarm.minute }}</h1>
+					<!-- <input checked data-toggle="toggle" type="checkbox"> -->
+					<label class="switch">
+						<input type="checkbox">
+						<span class="slider round"></span>
+					</label>
 					<hr>
 					<p id="card_{{alarm.id}}" class="collapse">
 						{{ alarm.label if alarm.label else 'Alarm' }}<br> 
 						repeats: <b>{{ alarm.repeat }}</b><br>
-						{% if alarm.monday is sameas true %} <div class="round on">M</div>{% else %} <div class="round off">M</div>{% endif %}
-						{% if alarm.tuesday is sameas True %} <div class="round on">T</div>{% else %} <div class="round off">T</div>{% endif %}
-						{% if alarm.wednesday is sameas True %} <div class="round on">W</div>{% else %} <div class="round off">W</div>{% endif %}
-						{% if alarm.thursday is sameas True %} <div class="round on">T</div>{% else %} <div class="round off">T</div>{% endif %}
-						{% if alarm.friday is sameas True %} <div class="round on">F</div>{% else %} <div class="round off">F</div>{% endif %}
-						{% if alarm.saturday is sameas True %} <div class="round on">S</div>{% else %} <div class="round off">S</div>{% endif %}
-						{% if alarm.sunday is sameas True %} <div class="round on">S</div>{% else %} <div class="round off">S</div>{% endif %}
+						{% if alarm.monday is sameas true %} <div class="day on">M</div>{% else %} <div class="day off">M</div>{% endif %}
+						{% if alarm.tuesday is sameas True %} <div class="day on">T</div>{% else %} <div class="day off">T</div>{% endif %}
+						{% if alarm.wednesday is sameas True %} <div class="day on">W</div>{% else %} <div class="day off">W</div>{% endif %}
+						{% if alarm.thursday is sameas True %} <div class="day on">T</div>{% else %} <div class="day off">T</div>{% endif %}
+						{% if alarm.friday is sameas True %} <div class="day on">F</div>{% else %} <div class="day off">F</div>{% endif %}
+						{% if alarm.saturday is sameas True %} <div class="day on">S</div>{% else %} <div class="day off">S</div>{% endif %}
+						{% if alarm.sunday is sameas True %} <div class="day on">S</div>{% else %} <div class="day off">S</div>{% endif %}
 					</p>
 				</div>
 			</div>
