@@ -46,18 +46,22 @@ body {
 
 .round {
 	border-radius: 100%;
-	background-color: green;
 	text-align: center;
 	width: 1.5em;
 	height: 1.5em;
 	display: inline-block;
 	margin-right: 5px;
+	color: white;
 }
 
-.round .on {
-	background-color: pink;
+.on {
+	background-color: #808080; 
 }
 
-.round .off {
-	background-color: grey;
+.off {
+	background-color: #D3D3D3;
+}
+
+.navbar-inverse .navbar-brand {
+	color: white;
 }

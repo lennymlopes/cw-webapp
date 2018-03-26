@@ -20,9 +20,9 @@ class User(UserMixin, db.Model):
 class Alarm(db.Model):
 	id = db.Column(db.Integer, primary_key=True)
 	#time = db.Column(db.String(64), index=True, unique=True)
-	hour = db.Column(db.Integer)
-	minute = db.Column(db.Integer)
-	active = db.Column(db.Boolean, index=True, unique=True)
+	hour = db.Column(db.Integer, index=True)
+	minute = db.Column(db.Integer, index=True)
+	#active = db.Column(db.Boolean, default=True)
 	repeat = db.Column(db.String(64))
 	label = db.Column(db.String(64))
 	duration = db.Column(db.Integer)
