@@ -52,6 +52,9 @@ body {
 	display: inline-block;
 	margin-right: 5px;
 	color: white;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
 }
 
 .on {
@@ -66,10 +69,17 @@ body {
 	color: white;
 }
 
-/*.time {
-	display: inline;
+.inline-block {
+	display: inline-block;
 }
-*/
+
+
+
+.weekbar {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
 /*-- SWITCH -----------------------------------------------------------------------------------------*/
 
  /* The switch - the box around the slider */
@@ -87,6 +97,8 @@ body {
 .slider {
 /*	padding-top: auto;
 	padding-bottom: auto;*/
+	margin-top: 20px;
+	margin-bottom: 10px;
   position: absolute;
   cursor: pointer;
   top: 0;
