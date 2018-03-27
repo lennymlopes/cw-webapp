@@ -16,6 +16,9 @@
 					<p id="card_{{alarm.id}}" class="collapse">
 						{{ alarm.label if alarm.label else 'Alarm' }}<br> 
 						repeats: <b>{{ alarm.repeat }}</b><br>
+						<span class="glyphicon glyphicon-trash">
+					</p>
+					<p>
 						{% if alarm.monday is sameas true %} <div class="day on">M</div>{% else %} <div class="day off">M</div>{% endif %}
 						{% if alarm.tuesday is sameas True %} <div class="day on">T</div>{% else %} <div class="day off">T</div>{% endif %}
 						{% if alarm.wednesday is sameas True %} <div class="day on">W</div>{% else %} <div class="day off">W</div>{% endif %}
