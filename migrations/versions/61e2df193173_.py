@@ -1,8 +1,8 @@
-"""add user and alarm table
+"""empty message
 
-Revision ID: 47211a326905
+Revision ID: 61e2df193173
 Revises: 
-Create Date: 2018-03-25 18:41:54.803348
+Create Date: 2018-03-28 15:46:22.194510
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = '47211a326905'
+revision = '61e2df193173'
 down_revision = None
 branch_labels = None
 depends_on = None
@@ -22,13 +22,20 @@ def upgrade():
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('hour', sa.Integer(), nullable=True),
     sa.Column('minute', sa.Integer(), nullable=True),
-    sa.Column('active', sa.Boolean(), nullable=True),
-    sa.Column('repeat', sa.String(length=64), nullable=True),
+    sa.Column('repeat', sa.Boolean(), nullable=True),
     sa.Column('label', sa.String(length=64), nullable=True),
     sa.Column('duration', sa.Integer(), nullable=True),
+    sa.Column('monday', sa.Boolean(), nullable=True),
+    sa.Column('tuesday', sa.Boolean(), nullable=True),
+    sa.Column('wednesday', sa.Boolean(), nullable=True),
+    sa.Column('thursday', sa.Boolean(), nullable=True),
+    sa.Column('friday', sa.Boolean(), nullable=True),
+    sa.Column('saturday', sa.Boolean(), nullable=True),
+    sa.Column('sunday', sa.Boolean(), nullable=True),
     sa.PrimaryKeyConstraint('id')
     )
-    op.create_index(op.f('ix_alarm_active'), 'alarm', ['active'], unique=True)
+    op.create_index(op.f('ix_alarm_hour'), 'alarm', ['hour'], unique=False)
+    op.create_index(op.f('ix_alarm_minute'), 'alarm', ['minute'], unique=False)
     op.create_table('user',
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('username', sa.String(length=64), nullable=True),
@@ -46,6 +53,7 @@ def downgrade():
     op.drop_index(op.f('ix_user_username'), table_name='user')
     op.drop_index(op.f('ix_user_email'), table_name='user')
     op.drop_table('user')
-    op.drop_index(op.f('ix_alarm_active'), table_name='alarm')
+    op.drop_index(op.f('ix_alarm_minute'), table_name='alarm')
+    op.drop_index(op.f('ix_alarm_hour'), table_name='alarm')
     op.drop_table('alarm')
     # ### end Alembic commands ###
