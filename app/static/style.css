@@ -58,11 +58,13 @@ body {
 }
 
 .on {
-	background-color: #808080; 
+	/*background-color: #808080; */
+	background-color: #2196F3;
 }
 
 .off {
-	background-color: #D3D3D3;
+	/*background-color: #D3D3D3;*/
+	background-color: #ccc
 }
 
 .navbar-inverse .navbar-brand {
@@ -86,19 +88,19 @@ body {
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  min-width: 60px;
+  min-height: 34px;
+  margin-top: 20px;
+  max-height: 54px;
 }
 
 /* Hide default HTML checkbox */
 .switch input {display:none;}
 
+
+
 /* The slider */
 .slider {
-/*	padding-top: auto;
-	padding-bottom: auto;*/
-	margin-top: 20px;
-	margin-bottom: 10px;
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -144,3 +146,7 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 } 
+
+.mtop0 {
+	margin-top: 0;
+}

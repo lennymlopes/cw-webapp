@@ -4,6 +4,54 @@
 		"selected_items":
 		[
 			[
+				"col",
+				"col-xs-12"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"mari",
+				"margin-top"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"c",
+				"checkbox"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"Ala",
+				"Alarm"
+			],
+			[
+				"Settings",
+				"SettingsForm"
+			],
+			[
+				"login",
+				"login_required"
+			],
+			[
 				"s",
 				"saturday"
 			],
@@ -24,10 +72,6 @@
 				"border-bottom"
 			],
 			[
-				"bor",
-				"border-top"
-			],
-			[
 				"border-r",
 				"border-radius"
 			],
@@ -38,10 +82,6 @@
 			[
 				"shad",
 				"box-shadow"
-			],
-			[
-				"col",
-				"col-xs-12"
 			],
 			[
 				"p",
@@ -100,10 +140,6 @@
 				"buttstuff"
 			],
 			[
-				"in",
-				"input\tTag"
-			],
-			[
 				"ac",
 				"action\tAttr"
 			],
@@ -120,10 +156,40 @@
 	"buffers":
 	[
 		{
-			"file": "app/models.py",
+			"contents": "//\n// Base styles\n//\n\n.card {\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  min-width: 0;\n  word-wrap: break-word;\n  background-color: $card-bg;\n  background-clip: border-box;\n  border: $card-border-width solid $card-border-color;\n  @include border-radius($card-border-radius);\n\n  > hr {\n    margin-right: 0;\n    margin-left: 0;\n  }\n\n  > .list-group:first-child {\n    .list-group-item:first-child {\n      @include border-top-radius($card-border-radius);\n    }\n  }\n\n  > .list-group:last-child {\n    .list-group-item:last-child {\n      @include border-bottom-radius($card-border-radius);\n    }\n  }\n}\n\n.card-body {\n  // Enable `flex-grow: 1` for decks and groups so that card blocks take up\n  // as much space as possible, ensuring footers are aligned to the bottom.\n  flex: 1 1 auto;\n  padding: $card-spacer-x;\n}\n\n.card-title {\n  margin-bottom: $card-spacer-y;\n}\n\n.card-subtitle {\n  margin-top: -($card-spacer-y / 2);\n  margin-bottom: 0;\n}\n\n.card-text:last-child {\n  margin-bottom: 0;\n}\n\n.card-link {\n  @include hover {\n    text-decoration: none;\n  }\n\n  + .card-link {\n    margin-left: $card-spacer-x;\n  }\n}\n\n//\n// Optional textual caps\n//\n\n.card-header {\n  padding: $card-spacer-y $card-spacer-x;\n  margin-bottom: 0; // Removes the default margin-bottom of <hN>\n  background-color: $card-cap-bg;\n  border-bottom: $card-border-width solid $card-border-color;\n\n  &:first-child {\n    @include border-radius($card-inner-border-radius $card-inner-border-radius 0 0);\n  }\n\n  + .list-group {\n    .list-group-item:first-child {\n      border-top: 0;\n    }\n  }\n}\n\n.card-footer {\n  padding: $card-spacer-y $card-spacer-x;\n  background-color: $card-cap-bg;\n  border-top: $card-border-width solid $card-border-color;\n\n  &:last-child {\n    @include border-radius(0 0 $card-inner-border-radius $card-inner-border-radius);\n  }\n}\n\n\n//\n// Header navs\n//\n\n.card-header-tabs {\n  margin-right: -($card-spacer-x / 2);\n  margin-bottom: -$card-spacer-y;\n  margin-left: -($card-spacer-x / 2);\n  border-bottom: 0;\n}\n\n.card-header-pills {\n  margin-right: -($card-spacer-x / 2);\n  margin-left: -($card-spacer-x / 2);\n}\n\n// Card image\n.card-img-overlay {\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  padding: $card-img-overlay-padding;\n}\n\n.card-img {\n  width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch\n  @include border-radius($card-inner-border-radius);\n}\n\n// Card image caps\n.card-img-top {\n  width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch\n  @include border-top-radius($card-inner-border-radius);\n}\n\n.card-img-bottom {\n  width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch\n  @include border-bottom-radius($card-inner-border-radius);\n}\n\n\n// Card deck\n\n.card-deck {\n  display: flex;\n  flex-direction: column;\n\n  .card {\n    margin-bottom: $card-deck-margin;\n  }\n\n  @include media-breakpoint-up(sm) {\n    flex-flow: row wrap;\n    margin-right: -$card-deck-margin;\n    margin-left: -$card-deck-margin;\n\n    .card {\n      display: flex;\n      // Flexbugs #4: https://github.com/philipwalton/flexbugs#4-flex-shorthand-declarations-with-unitless-flex-basis-values-are-ignored\n      flex: 1 0 0%;\n      flex-direction: column;\n      margin-right: $card-deck-margin;\n      margin-bottom: 0; // Override the default\n      margin-left: $card-deck-margin;\n    }\n  }\n}\n\n\n//\n// Card groups\n//\n\n.card-group {\n  display: flex;\n  flex-direction: column;\n\n  // The child selector allows nested `.card` within `.card-group`\n  // to display properly.\n  > .card {\n    margin-bottom: $card-group-margin;\n  }\n\n  @include media-breakpoint-up(sm) {\n    flex-flow: row wrap;\n    // The child selector allows nested `.card` within `.card-group`\n    // to display properly.\n    > .card {\n      // Flexbugs #4: https://github.com/philipwalton/flexbugs#4-flex-shorthand-declarations-with-unitless-flex-basis-values-are-ignored\n      flex: 1 0 0%;\n      margin-bottom: 0;\n\n      + .card {\n        margin-left: 0;\n        border-left: 0;\n      }\n\n      // Handle rounded corners\n      @if $enable-rounded {\n        &:first-child {\n          @include border-right-radius(0);\n\n          .card-img-top,\n          .card-header {\n            border-top-right-radius: 0;\n          }\n          .card-img-bottom,\n          .card-footer {\n            border-bottom-right-radius: 0;\n          }\n        }\n\n        &:last-child {\n          @include border-left-radius(0);\n\n          .card-img-top,\n          .card-header {\n            border-top-left-radius: 0;\n          }\n          .card-img-bottom,\n          .card-footer {\n            border-bottom-left-radius: 0;\n          }\n        }\n\n        &:only-child {\n          @include border-radius($card-border-radius);\n\n          .card-img-top,\n          .card-header {\n            @include border-top-radius($card-border-radius);\n          }\n          .card-img-bottom,\n          .card-footer {\n            @include border-bottom-radius($card-border-radius);\n          }\n        }\n\n        &:not(:first-child):not(:last-child):not(:only-child) {\n          @include border-radius(0);\n\n          .card-img-top,\n          .card-img-bottom,\n          .card-header,\n          .card-footer {\n            @include border-radius(0);\n          }\n        }\n      }\n    }\n  }\n}\n\n\n//\n// Columns\n//\n\n.card-columns {\n  .card {\n    margin-bottom: $card-columns-margin;\n  }\n\n  @include media-breakpoint-up(sm) {\n    column-count: $card-columns-count;\n    column-gap: $card-columns-gap;\n\n    .card {\n      display: inline-block; // Don't let them vertically span multiple columns\n      width: 100%; // Don't let their width change\n    }\n  }\n}\n",
+			"file": "/C/Users/Lenny Lopes/AppData/Local/Temp/Temp2_bootstrap-4.0.0.zip/bootstrap-4.0.0/scss/_card.scss",
+			"file_size": 5693,
+			"file_write_time": 131607377880000000,
 			"settings":
 			{
-				"buffer_size": 664,
+				"buffer_size": 5693,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/templates/index.html",
+			"settings":
+			{
+				"buffer_size": 1935,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/static/style.css",
+			"settings":
+			{
+				"buffer_size": 2225,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/templates/alarm.html",
+			"settings":
+			{
+				"buffer_size": 1092,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
@@ -133,6 +199,15 @@
 			{
 				"buffer_size": 415,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "tiefe: 42cm\nbreite: 40 cm\nhöhe: 55cm",
+			"settings":
+			{
+				"buffer_size": 36,
+				"line_ending": "Windows",
+				"name": "tiefe: 42cm"
 			}
 		}
 	],
@@ -227,10 +302,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 443.0,
-		"last_filter": "run",
+		"height": 884.0,
+		"last_filter": "inst",
 		"selected_items":
 		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
 			[
 				"run",
 				"SublimeREPL: Python - RUN current file"
@@ -264,7 +343,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 789.0
+		"width": 1240.0
 	},
 	"console":
 	{
@@ -287,11 +366,39 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/webapp/cw-webapp",
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/webapp/cw-webapp/app"
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app"
 	],
 	"file_history":
 	[
+		"/C/Users/Lenny Lopes/Desktop/C3D_xyzCalibration_cube.gcode",
+		"/C/Users/Lenny Lopes/Desktop/cetus_test.gcode",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/models.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/routes.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/forms.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/base.html",
+		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/7/gallery/style.css",
+		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/7/gallery/index.html",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/login.html",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/register.html",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/settings.html",
+		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/7/landing-page/index.html",
+		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/7/landing-page/style.css",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/static/style.css",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/alarm.html",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/__init__.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/index.html",
+		"/C/Users/Lenny Lopes/AppData/Local/Temp/Temp1_bootstrap-4.0.0.zip/bootstrap-4.0.0/scss/_card.scss",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/requirements.txt",
+		"/C/Users/Lenny Lopes/Desktop/models.py.bak.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/webapp.py",
+		"/C/Users/Lenny Lopes/Desktop/forms.py",
+		"/C/Users/Lenny Lopes/Desktop/routes.py.bak.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/config.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/venv/Lib/site-packages/sqlalchemy/sql/sqltypes.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/3/etp1/etp1-project/Documentation/latex/zhawDocument.tex",
+		"/C/Program Files/KiCad/share/kicad/library/device.lib",
+		"/C/Users/Lenny Lopes/Drive/private/projects/electronics/kicad-libs/components.lib",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/webapp/cw-webapp/requirements.txt",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/webapp/cw-webapp/app/static/style.css",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/webapp/cw-webapp/app/templates/index.html",
@@ -316,7 +423,6 @@
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/webapp/app/__init__.py",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/webapp/app/routes.py",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/webapp/webapp.py",
-		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/7/gallery/index.html",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/microblog/app/templates/register.html",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/microblog/app/forms.py",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask/microblog/app/templates/login.html",
@@ -392,38 +498,11 @@
 		"/C/Users/Lenny Lopes/Desktop/NO$GBA_2.6a/README.TXT",
 		"/C/Users/Lenny Lopes/Google Drive/studies/semester/semester3/sisy1/EXERCISES/SiSy_test1_chap1n2/README.txt",
 		"/C/vDos/autoexec.txt",
-		"/C/Users/Lenny Lopes/Documents/LTspiceXVII/lib/cmp/standard.bjt",
-		"/C/Users/Lenny Lopes/Desktop/SiSy_test1_chap1n2/EX1/test_chap1_ex1.tex",
-		"/C/Users/Lenny Lopes/Desktop/SiSy_test1_chap1n2/EX3/test_chap1_ex3.tex",
-		"/C/Users/Lenny Lopes/Desktop/SiSy_test1_chap1n2/EX5/test_chap1_ex5_n.tex",
-		"/C/Users/Lenny Lopes/Desktop/SiSy_test1_chap1n2/SiSy_test1_chap1n2_lopes.tex",
-		"/C/Users/Lenny Lopes/Google Drive/studies/semester/semester3/etp1/etp1-project/Documentation/latex/zhawDocument.tex",
-		"/C/Users/Lenny Lopes/Google Drive/studies/semester/semester3/etp1/etp1-project/Documentation/latex/glossaryentries.tex",
-		"/C/Users/Lenny Lopes/Downloads/rgb_new.txt",
-		"/C/Users/Lenny Lopes/Google Drive/studies/semester/semester3/etp1/etp1-project/Documentation/latex/zhawreprt.cls",
-		"/C/Users/Lenny Lopes/Google Drive/studies/semester/semester3/etp1/etp1-project/Documentation/latex/zhawDocument.bbl",
-		"/C/Users/Lenny Lopes/Desktop/synth/notes.txt",
-		"/C/Users/Lenny Lopes/Downloads/testing.tex",
-		"/C/Users/Lenny Lopes/Google Drive/studies/semester/semester3/etp1/etp1-project/Documentation/latex/zhawSetup.tex",
-		"/C/Users/Lenny Lopes/Google Drive/studies/semester/semester3/etp1/etp1-project/Documentation/latex/packages.tex",
-		"/C/Users/Lenny Lopes/AppData/Roaming/Sublime Text 3/Packages/LaTeXTools/LaTeXTools.sublime-settings",
-		"/C/Users/Lenny Lopes/AppData/Roaming/Sublime Text 3/Packages/User/LaTeXTools.sublime-settings",
-		"/C/Users/Lenny Lopes/Google Drive/studies/semester/semester3/etp1/etp1-project/Documentation/appendix/known_issues.txt",
-		"/C/Users/Lenny Lopes/Downloads/scholololo.txt",
-		"/C/Users/Lenny Lopes/Google Drive/studies/semester/semester3/etp1/etp1-project/Documentation/calculations_mario.tex",
-		"/c/texlive/2017/texmf-dist/tex/latex/siunitx/siunitx.sty",
-		"/C/Users/Lenny Lopes/Desktop/test/test.tex",
-		"/C/Users/Lenny Lopes/Desktop/latex/zhawDocument.tex",
-		"/C/Users/Lenny Lopes/Desktop/latex/packages.tex",
-		"/C/Users/Lenny Lopes/Desktop/latex/.latexmkrc",
-		"/C/Users/Lenny Lopes/Desktop/latex/glossaryentries.tex",
-		"/C/Users/Lenny Lopes/Desktop/latex/zhawGanttDiagram.tex",
-		"/C/Users/Lenny Lopes/Google Drive/studies/semester/semester3/etp1/etp1-project/Documentation/layout.txt",
-		"/C/Users/Lenny Lopes/Desktop/mario-korrektur.txt"
+		"/C/Users/Lenny Lopes/Documents/LTspiceXVII/lib/cmp/standard.bjt"
 	],
 	"find":
 	{
-		"height": 61.0
+		"height": 175.0
 	},
 	"find_in_files":
 	{
@@ -437,6 +516,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"width",
+			"round",
+			"content",
+			"alarm.",
+			"d",
+			"time",
 			")\n",
 			"\t\t\t<tr>\n\t\t\t\t<td>{{ form.saturday.label }}</td>\n\t\t\t\t<td>{{ form.saturday }}</td>\n\t\t\t</tr>",
 			"menu_actions",
@@ -499,6 +584,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"day",
 			"main_menu_actions",
 			"card",
 			"h2",
@@ -516,47 +602,63 @@
 		"reverse": false,
 		"show_context": true,
 		"use_buffer2": true,
-		"whole_word": true,
-		"wrap": true
+		"whole_word": false,
+		"wrap": false
 	},
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/models.py",
+					"file": "/C/Users/Lenny Lopes/AppData/Local/Temp/Temp2_bootstrap-4.0.0.zip/bootstrap-4.0.0/scss/_card.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 664,
+						"buffer_size": 5693,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								46,
-								46
-							],
-							[
-								92,
-								92
-							],
-							[
-								154,
-								154
-							],
-							[
-								214,
-								214
+								354,
+								22
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/templates/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1935,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								629,
+								629
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -564,20 +666,42 @@
 					},
 					"stack_index": 0,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
-					"buffer": 1,
-					"file": "notes.txt",
+					"buffer": 2,
+					"file": "app/static/style.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 415,
+						"buffer_size": 2225,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1475,
+								1475
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3025.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/templates/alarm.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1092,
 						"regions":
 						{
 						},
@@ -590,13 +714,76 @@
 						],
 						"settings":
 						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 324.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"file": "notes.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 415,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								415,
+								415
+							]
+						],
+						"settings":
+						{
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 36,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								36,
+								36
+							]
+						],
+						"settings":
+						{
+							"auto_name": "tiefe: 42cm",
+							"default_dir": "C:\\Users\\Lenny Lopes\\Drive\\studies\\semester\\4\\etp2\\webapp\\cw-webapp",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -604,7 +791,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 61.0
+		"height": 58.0
 	},
 	"input":
 	{
@@ -630,7 +817,7 @@
 		"cols":
 		[
 			0.0,
-			0.691630591631,
+			0.758008658009,
 			1.0
 		],
 		"rows":
@@ -640,6 +827,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.deviot":
+	{
+		"height": 291.0
+	},
 	"output.exec":
 	{
 		"height": 114.0

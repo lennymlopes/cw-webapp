@@ -3,26 +3,25 @@
 {% block app_content %}
 
 	{% for alarm in alarms %}
-		<div class="col-lg-4 col-md-6 ">
+		<div class="col-lg-4 col-sm-6 ">
 			<div class="card">
 				<div class="card-body">
-					<div data-toggle="collapse" data-target="#card_{{ alarm.id }}" class="col-xs-8 col-sm-10">
+					<div data-toggle="collapse" data-target="#card_{{ alarm.id }}" class="col-xs-8 col-sm-9">
 						<h1 >{{ "%02d" % alarm.hour }}:{{ "%02d" % alarm.minute }}</h1>
 					</div>
-					<div class="col-xs-4 col-sm-2" align="right">
+					<div class="col-xs-4 col-sm-3" align="right">
 						<label class="switch">
 							<input type="checkbox">
 							<span class="slider round"></span>
 						</label>
 					</div>
-					<br>
-					<hr>
+					<!-- <div class="col-xs-12"><hr></div> -->
 					<div id="card_{{alarm.id}}" class="collapse col-xs-12">
-						{{ alarm.label if alarm.label else 'Alarm' }}<br> 
-						repeats: <b>{{ alarm.repeat }}</b><br>
-						<span class="glyphicon glyphicon-trash">
+						<h3 class="mtop0">{{ alarm.label if alarm.label else 'Alarm' }}</h3>
+						<p>repeats: <b>{{ alarm.repeat }}</b></p>
+						<p><span class="glyphicon glyphicon-trash"></p>
 					</div>
-					<div class="col-xs-12 weekbar">
+					<div class="col-xs-12 day-bar">
 						{% if alarm.monday is sameas true %} <div class="day on">M</div>{% else %} <div class="day off">M</div>{% endif %}
 						{% if alarm.tuesday is sameas True %} <div class="day on">T</div>{% else %} <div class="day off">T</div>{% endif %}
 						{% if alarm.wednesday is sameas True %} <div class="day on">W</div>{% else %} <div class="day off">W</div>{% endif %}
