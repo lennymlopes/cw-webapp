@@ -23,7 +23,7 @@ class Alarm(db.Model):
 	hour = db.Column(db.Integer, index=True)
 	minute = db.Column(db.Integer, index=True)
 	#active = db.Column(db.Boolean, default=True)
-	repeat = db.Column(db.String(64))
+	repeat = db.Column(db.Boolean)
 	label = db.Column(db.String(64))
 	duration = db.Column(db.Integer)
 	monday = db.Column(db.Boolean)
