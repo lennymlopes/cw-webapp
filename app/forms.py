@@ -37,7 +37,7 @@ class NewAlarmForm(FlaskForm):
 
 	hours = IntegerField('Hour', validators=[NumberRange(min=0, max=23),DataRequired()])
 	minutes = IntegerField('Minute', validators=[NumberRange(min=0, max=59),DataRequired()])
-	monday = BooleanField('Monday')
+	monday = BooleanField('M')
 	tuesday = BooleanField('Tuesday')
 	wednesday = BooleanField('Wednesday')
 	thursday = BooleanField('Thursday')

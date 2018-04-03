@@ -176,6 +176,8 @@ input:checked + .slider:before {
 	color: white;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 
