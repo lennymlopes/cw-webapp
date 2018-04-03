@@ -40,13 +40,43 @@
 								<label for="tuesday_{{ alarm.id }}">T</label>
 						</div>
 
+						<div class="day-checkbox">
+								<input type="checkbox" id="wednesday_{{ alarm.id }}"
+								{% if alarm.wednesday is sameas true %} checked {% endif %}
+								 />
+								<label for="wednesday_{{ alarm.id }}">W</label>
+						</div>
 
-						<!-- {% if alarm.tuesday is sameas True %} <div class="day on">T</div>{% else %} <div class="day off">T</div>{% endif %} -->
-						{% if alarm.wednesday is sameas True %} <div class="day on">W</div>{% else %} <div class="day off">W</div>{% endif %}
-						{% if alarm.thursday is sameas True %} <div class="day on">T</div>{% else %} <div class="day off">T</div>{% endif %}
-						{% if alarm.friday is sameas True %} <div class="day on">F</div>{% else %} <div class="day off">F</div>{% endif %}
-						{% if alarm.saturday is sameas True %} <div class="day on">S</div>{% else %} <div class="day off">S</div>{% endif %}
-						{% if alarm.sunday is sameas True %} <div class="day on">S</div>{% else %} <div class="day off">S</div>{% endif %}
+						<div class="day-checkbox">
+								<input type="checkbox" id="thursday_{{ alarm.id }}"
+								{% if alarm.thursday is sameas true %} checked {% endif %}
+								 />
+								<label for="thursday_{{ alarm.id }}">T</label>
+						</div>
+
+						<div class="day-checkbox">
+								<input type="checkbox" id="friday_{{ alarm.id }}"
+								{% if alarm.friday is sameas true %} checked {% endif %}
+								 />
+								<label for="friday_{{ alarm.id }}">F</label>
+						</div>
+
+						<div class="day-checkbox">
+								<input type="checkbox" id="saturday_{{ alarm.id }}"
+								{% if alarm.saturday is sameas true %} checked {% endif %}
+								 />
+								<label for="saturday_{{ alarm.id }}">S</label>
+						</div>
+
+						<div class="day-checkbox">
+								<input type="checkbox" id="sunday_{{ alarm.id }}"
+								{% if alarm.sunday is sameas true %} checked {% endif %}
+								 />
+								<label for="sunday_{{ alarm.id }}">S</label>
+						</div>
+
+
+
 					</div>
 					
 				</div>
