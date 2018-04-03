@@ -3,6 +3,11 @@
 {% block app_content %}
 
 	{% for alarm in alarms %}
+	<script type="text/javascript">
+		function myFunction() {
+			this.style.backgroundColor = color;
+		}
+	</script>
 		<div class="col-lg-4 col-sm-6 ">
 			<div class="card">
 				<div class="card-body">
@@ -22,7 +27,28 @@
 						<p><span class="glyphicon glyphicon-trash"></p>
 					</div>
 					<div class="col-xs-12 day-bar">
-						{% if alarm.monday is sameas true %} <div class="day on">M</div>{% else %} <div class="day off">M</div>{% endif %}
+
+
+
+						<div class="day-checkbox">
+								<input type="checkbox" id="monday" />
+								<label for="monday">M</label>
+						</div>
+<!-- 						{% if alarm.monday is sameas true %} 
+						<div class="day on">
+						{% else %} 
+						<div  class="day off">
+						{% endif %}
+						<input type="checkbox" id="checkbox" />
+						M</div> -->
+<!-- 						<div class="container">
+							<div class="test">
+								<input type="checkbox" id="monday" />
+								<label for="monday">M</label>
+							</div>
+						</div> -->
+
+
 						{% if alarm.tuesday is sameas True %} <div class="day on">T</div>{% else %} <div class="day off">T</div>{% endif %}
 						{% if alarm.wednesday is sameas True %} <div class="day on">W</div>{% else %} <div class="day off">W</div>{% endif %}
 						{% if alarm.thursday is sameas True %} <div class="day on">T</div>{% else %} <div class="day off">T</div>{% endif %}
