@@ -1,9 +1,14 @@
 {% extends "base.html" %}
 
 {% block app_content %}
-
-	{% for alarm in alarms %}
+	<script type="text/javascript">
+		function update_days(id) {
+			document.body.style.background = "red";
+		}
 	</script>
+	{% for alarm in alarms %}
+
+		
 		<div class="col-lg-4 col-sm-6 ">
 			<div class="card">
 				<div class="card-body">
@@ -21,15 +26,17 @@
 					<!-- <div class="col-xs-12"><hr></div> -->
 					<div id="card_{{alarm.id}}" class="collapse col-xs-12">
 						<h3 class="mtop0">{{ alarm.label if alarm.label else 'Alarm' }}</h3>
-						<p>repeats: <b>{{ alarm.repeat }}</b></p>
-						<p><span class="glyphicon glyphicon-trash"></p>
+						<p>Repeat: <b>{{ alarm.repeat }}</b></p>
+							<button type="submit" id="btn-delete">
+								<i class="glyphicon glyphicon-trash"></i>
+							</button>
 					</div>
 					<div class="col-xs-12 day-bar">
 
 
 
 						<div class="day-checkbox">
-								<input type="checkbox" id="monday_{{ alarm.id }}"
+								<input type="checkbox" id="monday_{{ alarm.id }}" onclick="update_days(test);" 
 								{% if alarm.monday is sameas true %} checked {% endif %}
 								 />
 								<label for="monday_{{ alarm.id }}">M</label>
