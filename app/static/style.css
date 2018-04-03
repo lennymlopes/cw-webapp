@@ -154,6 +154,9 @@ input:checked + .slider:before {
 
 .day-checkbox {
 	position:relative;
+	display: inline-block;
+	width: 1.5em;
+	margin-right: 5px;
 }
 
 .day-checkbox label {
@@ -164,25 +167,13 @@ input:checked + .slider:before {
 	width: 1.5em;
 	height: 1.5em;
 	display: inline-block;
-	margin-right: 5px;
+	
 	color: white;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
-.day-checkbox label:after {
-	background-color: #2196F3;
-	border: 2px solid #ccc;
-	border-radius: 50%;
-	text-align: center;
-	width: 1.5em;
-	height: 1.5em;
-	display: inline-block;
-	margin-right: 5px;
-	color: white;
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
+
 .day-checkbox input[type="checkbox"] {
   visibility: hidden;
   background-color: #ccc;

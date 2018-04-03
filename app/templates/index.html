@@ -3,10 +3,6 @@
 {% block app_content %}
 
 	{% for alarm in alarms %}
-	<script type="text/javascript">
-		function myFunction() {
-			this.style.backgroundColor = color;
-		}
 	</script>
 		<div class="col-lg-4 col-sm-6 ">
 			<div class="card">
@@ -31,25 +27,21 @@
 
 
 						<div class="day-checkbox">
-								<input type="checkbox" id="monday" />
-								<label for="monday">M</label>
+								<input type="checkbox" id="monday_{{ alarm.id }}"
+								{% if alarm.monday is sameas true %} checked {% endif %}
+								 />
+								<label for="monday_{{ alarm.id }}">M</label>
 						</div>
-<!-- 						{% if alarm.monday is sameas true %} 
-						<div class="day on">
-						{% else %} 
-						<div  class="day off">
-						{% endif %}
-						<input type="checkbox" id="checkbox" />
-						M</div> -->
-<!-- 						<div class="container">
-							<div class="test">
-								<input type="checkbox" id="monday" />
-								<label for="monday">M</label>
-							</div>
-						</div> -->
+
+						<div class="day-checkbox">
+								<input type="checkbox" id="tuesday_{{ alarm.id }}"
+								{% if alarm.tuesday is sameas true %} checked {% endif %}
+								 />
+								<label for="tuesday_{{ alarm.id }}">T</label>
+						</div>
 
 
-						{% if alarm.tuesday is sameas True %} <div class="day on">T</div>{% else %} <div class="day off">T</div>{% endif %}
+						<!-- {% if alarm.tuesday is sameas True %} <div class="day on">T</div>{% else %} <div class="day off">T</div>{% endif %} -->
 						{% if alarm.wednesday is sameas True %} <div class="day on">W</div>{% else %} <div class="day off">W</div>{% endif %}
 						{% if alarm.thursday is sameas True %} <div class="day on">T</div>{% else %} <div class="day off">T</div>{% endif %}
 						{% if alarm.friday is sameas True %} <div class="day on">F</div>{% else %} <div class="day off">F</div>{% endif %}
