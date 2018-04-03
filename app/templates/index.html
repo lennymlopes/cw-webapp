@@ -12,7 +12,9 @@
 					</div>
 					<div class="col-xs-4 col-sm-3" align="right">
 						<label class="switch">
-							<input type="checkbox">
+							<input type="checkbox"
+							{% if alarm.active is sameas true %} checked {% endif %}
+							>
 							<span class="slider round"></span>
 						</label>
 					</div>
