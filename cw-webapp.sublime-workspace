@@ -167,19 +167,10 @@
 			}
 		},
 		{
-			"file": "app/templates/index.html",
+			"file": "app/models.py",
 			"settings":
 			{
-				"buffer_size": 1935,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/static/style.css",
-			"settings":
-			{
-				"buffer_size": 2225,
+				"buffer_size": 1359,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -189,6 +180,14 @@
 			"settings":
 			{
 				"buffer_size": 1092,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/forms.py",
+			"settings":
+			{
+				"buffer_size": 2112,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -303,7 +302,7 @@
 	"command_palette":
 	{
 		"height": 884.0,
-		"last_filter": "inst",
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -343,7 +342,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 1240.0
+		"width": 1160.0
 	},
 	"console":
 	{
@@ -371,12 +370,18 @@
 	],
 	"file_history":
 	[
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask-websocket-io/socket.py",
+		"/C/Users/Lenny Lopes/Desktop/test.gcode",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/index.html",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/base.html",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/venv/Lib/site-packages/flask_wtf/form.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/alarm.html",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/static/style.css",
 		"/C/Users/Lenny Lopes/Desktop/C3D_xyzCalibration_cube.gcode",
 		"/C/Users/Lenny Lopes/Desktop/cetus_test.gcode",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/models.py",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/routes.py",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/forms.py",
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/base.html",
 		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/7/gallery/style.css",
 		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/7/gallery/index.html",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/login.html",
@@ -384,10 +389,7 @@
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/settings.html",
 		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/7/landing-page/index.html",
 		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/7/landing-page/style.css",
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/static/style.css",
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/alarm.html",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/__init__.py",
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/index.html",
 		"/C/Users/Lenny Lopes/AppData/Local/Temp/Temp1_bootstrap-4.0.0.zip/bootstrap-4.0.0/scss/_card.scss",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/requirements.txt",
 		"/C/Users/Lenny Lopes/Desktop/models.py.bak.py",
@@ -495,10 +497,7 @@
 		"/C/Users/Lenny Lopes/Desktop/info.html",
 		"/C/Program Files/KiCad/share/kicad/template/module-template/meta/info.html",
 		"/C/Users/Lenny Lopes/Desktop/Desktop/el3/hhrt/6_Drehstrom/Uebungen/EL3_Ueb5_1_Drehstrom.tex",
-		"/C/Users/Lenny Lopes/Desktop/NO$GBA_2.6a/README.TXT",
-		"/C/Users/Lenny Lopes/Google Drive/studies/semester/semester3/sisy1/EXERCISES/SiSy_test1_chap1n2/README.txt",
-		"/C/vDos/autoexec.txt",
-		"/C/Users/Lenny Lopes/Documents/LTspiceXVII/lib/cmp/standard.bjt"
+		"/C/Users/Lenny Lopes/Desktop/NO$GBA_2.6a/README.TXT"
 	],
 	"find":
 	{
@@ -636,29 +635,29 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/templates/index.html",
+					"file": "app/models.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1935,
+						"buffer_size": 1359,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								629,
-								629
+								1249,
+								1249
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
+							"syntax": "Packages/Python/Python.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -669,34 +668,6 @@
 				},
 				{
 					"buffer": 2,
-					"file": "app/static/style.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2225,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1475,
-								1475
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 3025.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "app/templates/alarm.html",
 					"semi_transient": false,
 					"settings":
@@ -708,8 +679,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								950,
+								950
 							]
 						],
 						"settings":
@@ -717,10 +688,38 @@
 							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 324.0,
+						"translation.y": 108.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/forms.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2112,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1835,
+								1835
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 336.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
