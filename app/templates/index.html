@@ -26,10 +26,21 @@
 					<!-- <div class="col-xs-12"><hr></div> -->
 					<div id="card_{{alarm.id}}" class="collapse col-xs-12">
 						<h3 class="mtop0">{{ alarm.label if alarm.label else 'Alarm' }}</h3>
-						<p>Repeat: <b>{{ alarm.repeat }}</b></p>
+						<div>
+							<div class="repeat-checkbox">
+								<input type="checkbox" id="repeat_{{ alarm.id }}"
+								{% if alarm.repeat is sameas true %} checked {% endif %}
+								 />
+								<label for="repeat_{{ alarm.id }}"></label>
+							</div>
+							Repeat
+						</div>
+						
 							<button type="submit" id="btn-delete">
 								<i class="glyphicon glyphicon-trash"></i>
+
 							</button>
+							Delete
 					</div>
 					<div class="col-xs-12 day-bar">
 
