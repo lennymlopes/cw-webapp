@@ -11,43 +11,37 @@
 			{{ form.hours(size=2) }}
 			{{ form.minutes(size=2) }}<br>
 		</p>
-		<p>Days
-			<div class="day-checkbox">
-				{{ form.monday }}
-				{{ form.monday.label }}
-								<!-- <input type="checkbox" id="monday" /> -->
-								<!-- <label for="monday">M</label> -->
-				</div>
-		<table>
-			<tr>
-				<!-- <td>{{ form.monday.label }}</td> -->
-				<!-- <td>{{ form.monday }}</td></tr> -->
-			<tr>
-				<td>{{ form.tuesday.label }}</td>
-				<td>{{ form.tuesday }}</td></tr>
-			<tr>
-				<td>{{ form.wednesday.label }}</td>
-				<td>{{ form.wednesday }}</td></tr>
-			<tr>
-				<td>{{ form.thursday.label }}</td>
-				<td>{{ form.thursday }}</td>
-			</tr>
-			<tr>
-				<td>{{ form.friday.label }}</td>
-				<td>{{ form.friday }}</td>
-			</tr>
-			<tr>
-				<td>{{ form.saturday.label }}</td>
-				<td>{{ form.saturday }}</td>
-			</tr>
-			<tr>
-				<td>{{ form.sunday.label }}</td>
-				<td>{{ form.sunday }}</td>
-			</tr>
-		</table>
-		</p>
-		<p> {{ form.repeat.label }} {{ form.repeat}}</p>
 		<p>{{ form.label.label }} {{ form.label(size=64) }}</p>
+		<p> {{ form.repeat.label }} {{ form.repeat}}</p>
+		<div class="day-checkbox">
+			{{ form.monday }}
+			{{ form.monday.label }}
+		</div>
+		<div class="day-checkbox">
+			{{ form.tuesday }}
+			{{ form.tuesday.label }}
+		</div>
+		<div class="day-checkbox">
+			{{ form.wednesday }}
+			{{ form.wednesday.label }}
+		</div>
+		<div class="day-checkbox">
+			{{ form.thursday }}
+			{{ form.thursday.label }}
+		</div>
+		<div class="day-checkbox">
+			{{ form.friday }}
+			{{ form.friday.label }}
+		</div>
+		<div class="day-checkbox">
+			{{ form.saturday }}
+			{{ form.saturday.label }}
+		</div>
+		<div class="day-checkbox">
+			{{ form.sunday }}
+			{{ form.sunday.label }}
+		</div>
+		
 		<p>{{ form.submit() }}</p>
 	</form>
 {% endblock %}

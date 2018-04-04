@@ -29,7 +29,7 @@
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					{% if current_user.is_anonymous %}
-					<li><a href="{{ url_for('login') }}">Login</a></li>
+					<!-- <li><a href="{{ url_for('login') }}">Login</a></li> -->
 					{% else %}
 					<li><a href="{{ url_for('new') }}">New Alarm</a></li>
 					<li><a href="{{ url_for('settings') }}">Settings</a></li>
