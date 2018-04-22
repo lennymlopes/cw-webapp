@@ -4,5 +4,5 @@ from app import app
 socketio = SocketIO(app)
 
 @socketio.on('update')
-def update_db(parameter):
-	print('Button ' + parameter)
+def update(parameter, data):
+	print('Updated ' + parameter + ': ' + data)

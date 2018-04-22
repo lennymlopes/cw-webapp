@@ -9,6 +9,6 @@ function random_bg_color() {
     }
 
 
-function update(parameter) {
-	socket.emit('update', parameter)
+function update(parameter, data) {
+	socket.emit('update', parameter, data)
 }

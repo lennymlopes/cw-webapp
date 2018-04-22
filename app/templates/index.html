@@ -19,11 +19,11 @@
 							<span class="slider round"></span>
 						</label>
 					</div>
-					<div class="col-xs-1"></div>
-					<div class="slidecontainer col-xs-10"> <input type="range" min="1" max="100" class="slider" id="myRange" onchange="update(this.value)">
-</div>
+					<div class="range-container col-xs-12"> <input type="range" min="0" max="255" value="0" id="red" onchange="update('Red', this.value)"></div>
+					<div class="range-container col-xs-12"> <input type="range" min="0" max="255" value="0" id="green" onchange="update('Green', this.value)"></div>
+					<div class="range-container col-xs-12"> <input type="range" min="0" max="255" value="0" id="blue" onchange="update('Blue', this.value)"></div>
 				</div>
-				<div class="col-xs-1"></div>
+				
 	</div>
 	{% for alarm in alarms %}
 		<div class="col-lg-4 col-sm-6 ">

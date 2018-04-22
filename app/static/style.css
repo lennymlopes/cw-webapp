@@ -115,6 +115,7 @@ body {
   background-color: #ccc;
   -webkit-transition: .4s;
   transition: .4s;
+  height: 34px;
 }
 
 .slider:before {
@@ -270,4 +271,62 @@ input:checked + .slider:before {
 
 /*#color-selector {
 	height: 400px;
+}*/
+
+/*slider*/
+
+
+
+
+.range-container input {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 26px;
+  margin: 10px 50px;
+  /*background: linear-gradient(to right, #16a085 0%, #16a085 100%);*/
+  background: #ccc;
+  background-size: 150px 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  outline: none;
+  zoom: 130%;
+  display: block;
+  margin: auto;
+  margin-bottom: 5px;
+  border-radius: 17px;
+  border: 3px solid #ccc;
+}
+
+.range-container input::-webkit-slider-thumb {
+ -webkit-appearance: none;
+ width: 20px;
+ height: 20px;
+ background: #2196F3;
+ border-radius: 50%;
+ position: relative;
+ z-index: 3;
+}
+
+.range-container input::-webkit-slider-thumb:after {
+ content: " ";
+ width: 160px;
+ height: 10px;
+ position: absolute;
+ z-index: 1;
+ right: 20px;
+ top: 5px;
+ background: #2ecc71;
+}
+
+/*.range-container input::-webkit-slider-thumb #red {
+	background: red;
+}
+
+.range-container input::-webkit-slider-thumb #green {
+	background: green;
+}
+
+.range-container input::-webkit-slider-thumb #blue {
+	background: blue;
 }*/
