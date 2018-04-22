@@ -167,7 +167,51 @@
 			"file": "app/__init__.py",
 			"settings":
 			{
-				"buffer_size": 486,
+				"buffer_size": 620,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/websockets/sockets.py",
+			"settings":
+			{
+				"buffer_size": 369,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Lenny Lopes/Desktop/webapp-sockets/.gitignore",
+			"settings":
+			{
+				"buffer_size": 5,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Lenny Lopes/Desktop/webapp-sockets/app/__init__.py",
+			"settings":
+			{
+				"buffer_size": 70,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Lenny Lopes/Desktop/webapp-sockets/app/routes.py",
+			"settings":
+			{
+				"buffer_size": 97,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/forms.py",
+			"settings":
+			{
+				"buffer_size": 2160,
 				"line_ending": "Windows"
 			}
 		},
@@ -175,15 +219,7 @@
 			"file": "app/static/functions.js",
 			"settings":
 			{
-				"buffer_size": 297,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/models.py",
-			"settings":
-			{
-				"buffer_size": 1358,
+				"buffer_size": 538,
 				"line_ending": "Windows"
 			}
 		},
@@ -196,18 +232,10 @@
 			}
 		},
 		{
-			"file": "webapp.py",
+			"file": "app/sockets.py",
 			"settings":
 			{
-				"buffer_size": 164,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "config.py",
-			"settings":
-			{
-				"buffer_size": 310,
+				"buffer_size": 104,
 				"line_ending": "Windows"
 			}
 		}
@@ -421,16 +449,30 @@
 	[
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/static",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates"
 	],
 	"file_history":
 	[
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/sockets.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/routes.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/webapp.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/base.html",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/static/functions.js",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/app-sockets/sockets.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/app-sockets/templates/index.html",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/websockets/sockets.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/app-sockets/routes.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/app-sockets/__init__.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/app-sockets/.gitignore",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/websockets/templates/index.html",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/config.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/index.html",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/models.py",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/static/style.css",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/settings.html",
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/index.html",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/forms.py",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/login.html",
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/base.html",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/notes.txt",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/shared/ConceptReport/conceptreport.txt",
 		"/C/Users/Lenny Lopes/Desktop/project/app/hal_spi.c",
@@ -439,20 +481,14 @@
 		"/C/Users/Lenny Lopes/Desktop/iaeste/moeglicher-zeitraum.txt",
 		"/C/Users/Lenny Lopes/Desktop/ctflach7/timer.h",
 		"/C/Users/Lenny Lopes/Desktop/project/app/test.c",
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/webapp.py",
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/config.py",
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/routes.py",
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/sockets.py",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/static/sockets.js",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/socket.html",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/sockets",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/webapp",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/etp1-project/ConceptReport/conceptreport.txt",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/__init__.py",
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/static/functions.js",
 		"/C/Users/Lenny Lopes/AppData/Local/Temp/Temp1_ws-webio.zip/ws-webio/ws-webio/server.py",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/alarm.html",
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/models.py",
 		"/C/Users/Lenny Lopes/AppData/Local/Temp/Temp2_bootstrap-4.0.0.zip/bootstrap-4.0.0/scss/_card.scss",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask-websocket-io/socket.py",
 		"/C/Users/Lenny Lopes/Desktop/test.gcode",
@@ -545,14 +581,7 @@
 		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/4/forms.html",
 		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/4/login.html",
 		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/4/form-ex.html",
-		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/3/html-basics/boilerplate.html",
-		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/3/html-basics/list_solution.html",
-		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/3/html-basics/firstpage.html",
-		"/D/config.txt",
-		"/C/Users/Lenny Lopes/Desktop/config.txt",
-		"/C/Users/Lenny Lopes/Desktop/flaskr/__init__.py",
-		"/C/Users/Lenny Lopes/Desktop/flaskr/MANIFEST.in",
-		"/C/Users/Lenny Lopes/Desktop/flaskr/setup.py"
+		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/3/html-basics/boilerplate.html"
 	],
 	"find":
 	{
@@ -668,7 +697,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -677,71 +706,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 486,
+						"buffer_size": 620,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								486,
-								486
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/static/functions.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 297,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								9,
-								26
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/models.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1358,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								603,
-								603
+								569,
+								569
 							]
 						],
 						"settings":
@@ -756,7 +729,175 @@
 					"type": "text"
 				},
 				{
+					"buffer": 1,
+					"file": "/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/websockets/sockets.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 369,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								288,
+								288
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/Lenny Lopes/Desktop/webapp-sockets/.gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5,
+								5
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Materialize/Langs/Git.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
 					"buffer": 3,
+					"file": "/C/Users/Lenny Lopes/Desktop/webapp-sockets/app/__init__.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 70,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								70,
+								70
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Users/Lenny Lopes/Desktop/webapp-sockets/app/routes.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 97,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								97,
+								97
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/forms.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2160,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/static/functions.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 538,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								469,
+								469
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
 					"file": "app/routes.py",
 					"semi_transient": false,
 					"settings":
@@ -780,16 +921,16 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "webapp.py",
+					"buffer": 8,
+					"file": "app/sockets.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 164,
+						"buffer_size": 104,
 						"regions":
 						{
 						},
@@ -808,35 +949,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "config.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 310,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								310,
-								310
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
+					"stack_index": 8,
 					"type": "text"
 				}
 			]
