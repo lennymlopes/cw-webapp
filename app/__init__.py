@@ -25,4 +25,4 @@ bootstrap = Bootstrap(app)
 # socketio 
 socketio = SocketIO(app)
 
-from app import routes, models
+from app import routes, models, sockets
