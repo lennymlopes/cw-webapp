@@ -7,3 +7,13 @@ function random_bg_color() {
   
     document.body.style.background = bgColor;
     }
+
+
+var socket = io.connect('http://' + document.domain + ':' + location.port);
+	socket.on('connect', function() {
+		socket.emit('my event', {data: 'I\'m connected!'});
+	});
+
+	function update(parameter) {
+		socket.emit('update', parameter)
+	}
