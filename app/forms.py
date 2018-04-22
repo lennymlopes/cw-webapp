@@ -49,9 +49,12 @@ class NewAlarmForm(FlaskForm):
 	submit = SubmitField('Save')
 
 class SettingsForm(FlaskForm):
-	theme = BooleanField('Theme')
-	advanced = BooleanField('Advanced Mode')
-	time_format = BooleanField('Time Format')
+	theme = BooleanField('Dark Theme')
+	stream = StringField('Webradio Link')
+	delete = SubmitField('Delete All Alarms')
+
+	# advanced = BooleanField('Advanced Mode')
+	#time_format = BooleanField('Time Format')
 	submit = SubmitField('Save')
 
 

@@ -266,3 +266,8 @@ input:checked + .slider:before {
 		transition: .4s;
 		background-color: #ccc;
 }
+
+
+/*#color-selector {
+	height: 400px;
+}*/
