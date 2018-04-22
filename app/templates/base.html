@@ -8,8 +8,10 @@
 {% block styles %}
 	{{super()}}
 	<link rel=stylesheet href="{{ url_for('static', filename='style.css') }}">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400|Playfair+Display" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400|Playfair+Display" rel="stylesheet">
 {% endblock %}
+
+
 
 {% block navbar %}
 	<nav class="navbar navbar-inverse navbar-fixed-top">
@@ -34,6 +36,7 @@
 					<li><a href="{{ url_for('new') }}">New Alarm</a></li>
 					<li><a href="{{ url_for('settings') }}">Settings</a></li>
 					<li><a href="{{ url_for('logout') }}">Logout</a></li>
+					<li><button onclick="random_bg_color()">Click me</button></li>
 					{% endif %}
 				</ul>
 			</div>
@@ -56,10 +59,9 @@
 	</div>
 {% endblock %}
 
+
 {% block scripts %}
   {{super()}}
   <script type="text/javascript" src="{{ url_for('static', filename='functions.js') }}"></script>
 {% endblock %}
-
-
 

@@ -1,11 +1,8 @@
 {% extends "base.html" %}
 
 {% block app_content %}
-	<script type="text/javascript">
-		function update_days(id) {
-			document.body.style.background = "red";
-		}
-	</script>
+	{% for alarm in alarms %}
+
 
 	<div class="col-lg-12">
 		<div class="card">
@@ -29,7 +26,7 @@
 						<h1 >{{ "%02d" % alarm.hour }}:{{ "%02d" % alarm.minute }}</h1>
 					</div>
 					<div class="col-xs-4 col-sm-3" align="right">
-						<label class="switch">
+						<label class="switch" onclick="update_alarm({{ alarm.id }})">
 							<input type="checkbox"
 							{% if alarm.active is sameas true %} checked {% endif %}
 							>
@@ -60,7 +57,7 @@
 
 
 						<div class="day-checkbox">
-								<input type="checkbox" id="monday_{{ alarm.id }}" onclick="update_days(test);" 
+								<input type="checkbox" id="monday_{{ alarm.id }}"
 								{% if alarm.monday is sameas true %} checked {% endif %}
 								 />
 								<label for="monday_{{ alarm.id }}">M</label>
