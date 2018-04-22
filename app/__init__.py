@@ -4,6 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_login import LoginManager
 from flask_bootstrap import Bootstrap
+from flask_socketio import SocketIO
 
 app = Flask(__name__)
 
@@ -20,5 +21,8 @@ login.login_view = 'login'
 
 # bootstrap
 bootstrap = Bootstrap(app)
+
+# socketio 
+socketio = SocketIO(app)
 
 from app import routes, models
