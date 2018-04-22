@@ -247,7 +247,7 @@ input:checked + .slider:before {
 
 
 
-#btn-delete {
+.btn-delete {
 	background: none;
 	color: inherit;
 	border: none;
@@ -262,7 +262,7 @@ input:checked + .slider:before {
 	margin-top: 10px;
 }
 
-#btn-delete:hover {
+.btn-delete:hover {
 	-webkit-transition: .4s;
 		transition: .4s;
 		background-color: #ccc;

@@ -10,18 +10,29 @@
 	<div class="col-lg-12">
 		<div class="card">
 				<div class="card-body" id="color-selector">
-					<div class="col-xs-8 col-sm-9">
-						<h1>Moodlight</h1>
+					<div class="row">
+						<div class="col-xs-8 col-sm-9">
+							<h1>Moodlight</h1>
+						</div>
+						<div class="col-xs-4 col-sm-3" align="right">
+							<label class="switch">
+								<input type="checkbox" onchange="update('Moodlight', 'toggle')">
+								<span class="slider round"></span>
+							</label>
+						</div>
 					</div>
-					<div class="col-xs-4 col-sm-3" align="right">
-						<label class="switch">
-							<input type="checkbox">
-							<span class="slider round"></span>
-						</label>
+					<div class="row">
+						<div class="col-xs-3">Red</div>
+						<div class="range-container col-xs-9"> <input type="range" min="0" max="255" value="0" id="red" onchange="update('Red', this.value)"></div>
 					</div>
-					<div class="range-container col-xs-12"> <input type="range" min="0" max="255" value="0" id="red" onchange="update('Red', this.value)"></div>
-					<div class="range-container col-xs-12"> <input type="range" min="0" max="255" value="0" id="green" onchange="update('Green', this.value)"></div>
-					<div class="range-container col-xs-12"> <input type="range" min="0" max="255" value="0" id="blue" onchange="update('Blue', this.value)"></div>
+					<div class="row">
+						<div class="col-xs-3">Green</div>
+						<div class="range-container col-xs-9"> <input type="range" min="0" max="255" value="0" id="green" onchange="update('Green', this.value)"></div>
+					</div>
+					<div class="row">
+						<div class="col-xs-3">Blue</div>
+						<div class="range-container col-xs-9"> <input type="range" min="0" max="255" value="0" id="blue" onchange="update('Blue', this.value)"></div>
+					</div>
 				</div>
 				
 	</div>
@@ -34,7 +45,7 @@
 					</div>
 					<div class="col-xs-4 col-sm-3" align="right">
 						<label class="switch">
-							<input type="checkbox"
+							<input type="checkbox" onchange="update('alarm_{{alarm.id}}', 'toggle')"
 							{% if alarm.active is sameas true %} checked {% endif %}
 							>
 							<span class="slider round"></span>
@@ -45,7 +56,7 @@
 						<h3 class="mtop0">{{ alarm.label if alarm.label else 'Alarm' }}</h3>
 						<div>
 							<div class="repeat-checkbox">
-								<input type="checkbox" id="repeat_{{ alarm.id }}"
+								<input type="checkbox" id="repeat_{{ alarm.id }}" onchange="update('alarm_{{alarm.id}}_repeat', 'toggle')"
 								{% if alarm.repeat is sameas true %} checked {% endif %}
 								 />
 								<label for="repeat_{{ alarm.id }}"></label>
@@ -53,7 +64,7 @@
 							Repeat
 						</div>
 						
-							<button type="submit" id="btn-delete">
+							<button type="submit" class="btn-delete" onclick="update('alarm_{{alarm.id}}', 'delete')">
 								<i class="glyphicon glyphicon-trash"></i>
 
 							</button>
@@ -64,49 +75,49 @@
 
 
 						<div class="day-checkbox">
-								<input type="checkbox" id="monday_{{ alarm.id }}" onclick="update_days(test);" 
+								<input type="checkbox" id="monday_{{ alarm.id }}" onchange="update('a_{{alarm.id}}_monday', 'toggle')" 
 								{% if alarm.monday is sameas true %} checked {% endif %}
 								 />
 								<label for="monday_{{ alarm.id }}">M</label>
 						</div>
 
 						<div class="day-checkbox">
-								<input type="checkbox" id="tuesday_{{ alarm.id }}"
+								<input type="checkbox" id="tuesday_{{ alarm.id }}" onchange="update('a_{{alarm.id}}_tuesday', 'toggle')"
 								{% if alarm.tuesday is sameas true %} checked {% endif %}
 								 />
 								<label for="tuesday_{{ alarm.id }}">T</label>
 						</div>
 
 						<div class="day-checkbox">
-								<input type="checkbox" id="wednesday_{{ alarm.id }}"
+								<input type="checkbox" id="wednesday_{{ alarm.id }}" onchange="update('a_{{alarm.id}}_wednesday', 'toggle')"
 								{% if alarm.wednesday is sameas true %} checked {% endif %}
 								 />
 								<label for="wednesday_{{ alarm.id }}">W</label>
 						</div>
 
 						<div class="day-checkbox">
-								<input type="checkbox" id="thursday_{{ alarm.id }}"
+								<input type="checkbox" id="thursday_{{ alarm.id }}" onchange="update('a_{{alarm.id}}_thursday', 'toggle')"
 								{% if alarm.thursday is sameas true %} checked {% endif %}
 								 />
 								<label for="thursday_{{ alarm.id }}">T</label>
 						</div>
 
 						<div class="day-checkbox">
-								<input type="checkbox" id="friday_{{ alarm.id }}"
+								<input type="checkbox" id="friday_{{ alarm.id }}" onchange="update('a_{{alarm.id}}_friday', 'toggle')"
 								{% if alarm.friday is sameas true %} checked {% endif %}
 								 />
 								<label for="friday_{{ alarm.id }}">F</label>
 						</div>
 
 						<div class="day-checkbox">
-								<input type="checkbox" id="saturday_{{ alarm.id }}"
+								<input type="checkbox" id="saturday_{{ alarm.id }}" onchange="update('a_{{alarm.id}}_saturday', 'toggle')"
 								{% if alarm.saturday is sameas true %} checked {% endif %}
 								 />
 								<label for="saturday_{{ alarm.id }}">S</label>
 						</div>
 
 						<div class="day-checkbox">
-								<input type="checkbox" id="sunday_{{ alarm.id }}"
+								<input type="checkbox" id="sunday_{{ alarm.id }}" onchange="update('a_{{alarm.id}}_sunday', 'toggle')"
 								{% if alarm.sunday is sameas true %} checked {% endif %}
 								 />
 								<label for="sunday_{{ alarm.id }}">S</label>
