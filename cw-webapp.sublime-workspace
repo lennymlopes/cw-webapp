@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"submi",
+				"SubmitField"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
 				"col",
 				"col-xs-12"
 			],
@@ -156,61 +164,55 @@
 	"buffers":
 	[
 		{
-			"contents": "//\n// Base styles\n//\n\n.card {\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  min-width: 0;\n  word-wrap: break-word;\n  background-color: $card-bg;\n  background-clip: border-box;\n  border: $card-border-width solid $card-border-color;\n  @include border-radius($card-border-radius);\n\n  > hr {\n    margin-right: 0;\n    margin-left: 0;\n  }\n\n  > .list-group:first-child {\n    .list-group-item:first-child {\n      @include border-top-radius($card-border-radius);\n    }\n  }\n\n  > .list-group:last-child {\n    .list-group-item:last-child {\n      @include border-bottom-radius($card-border-radius);\n    }\n  }\n}\n\n.card-body {\n  // Enable `flex-grow: 1` for decks and groups so that card blocks take up\n  // as much space as possible, ensuring footers are aligned to the bottom.\n  flex: 1 1 auto;\n  padding: $card-spacer-x;\n}\n\n.card-title {\n  margin-bottom: $card-spacer-y;\n}\n\n.card-subtitle {\n  margin-top: -($card-spacer-y / 2);\n  margin-bottom: 0;\n}\n\n.card-text:last-child {\n  margin-bottom: 0;\n}\n\n.card-link {\n  @include hover {\n    text-decoration: none;\n  }\n\n  + .card-link {\n    margin-left: $card-spacer-x;\n  }\n}\n\n//\n// Optional textual caps\n//\n\n.card-header {\n  padding: $card-spacer-y $card-spacer-x;\n  margin-bottom: 0; // Removes the default margin-bottom of <hN>\n  background-color: $card-cap-bg;\n  border-bottom: $card-border-width solid $card-border-color;\n\n  &:first-child {\n    @include border-radius($card-inner-border-radius $card-inner-border-radius 0 0);\n  }\n\n  + .list-group {\n    .list-group-item:first-child {\n      border-top: 0;\n    }\n  }\n}\n\n.card-footer {\n  padding: $card-spacer-y $card-spacer-x;\n  background-color: $card-cap-bg;\n  border-top: $card-border-width solid $card-border-color;\n\n  &:last-child {\n    @include border-radius(0 0 $card-inner-border-radius $card-inner-border-radius);\n  }\n}\n\n\n//\n// Header navs\n//\n\n.card-header-tabs {\n  margin-right: -($card-spacer-x / 2);\n  margin-bottom: -$card-spacer-y;\n  margin-left: -($card-spacer-x / 2);\n  border-bottom: 0;\n}\n\n.card-header-pills {\n  margin-right: -($card-spacer-x / 2);\n  margin-left: -($card-spacer-x / 2);\n}\n\n// Card image\n.card-img-overlay {\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  padding: $card-img-overlay-padding;\n}\n\n.card-img {\n  width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch\n  @include border-radius($card-inner-border-radius);\n}\n\n// Card image caps\n.card-img-top {\n  width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch\n  @include border-top-radius($card-inner-border-radius);\n}\n\n.card-img-bottom {\n  width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch\n  @include border-bottom-radius($card-inner-border-radius);\n}\n\n\n// Card deck\n\n.card-deck {\n  display: flex;\n  flex-direction: column;\n\n  .card {\n    margin-bottom: $card-deck-margin;\n  }\n\n  @include media-breakpoint-up(sm) {\n    flex-flow: row wrap;\n    margin-right: -$card-deck-margin;\n    margin-left: -$card-deck-margin;\n\n    .card {\n      display: flex;\n      // Flexbugs #4: https://github.com/philipwalton/flexbugs#4-flex-shorthand-declarations-with-unitless-flex-basis-values-are-ignored\n      flex: 1 0 0%;\n      flex-direction: column;\n      margin-right: $card-deck-margin;\n      margin-bottom: 0; // Override the default\n      margin-left: $card-deck-margin;\n    }\n  }\n}\n\n\n//\n// Card groups\n//\n\n.card-group {\n  display: flex;\n  flex-direction: column;\n\n  // The child selector allows nested `.card` within `.card-group`\n  // to display properly.\n  > .card {\n    margin-bottom: $card-group-margin;\n  }\n\n  @include media-breakpoint-up(sm) {\n    flex-flow: row wrap;\n    // The child selector allows nested `.card` within `.card-group`\n    // to display properly.\n    > .card {\n      // Flexbugs #4: https://github.com/philipwalton/flexbugs#4-flex-shorthand-declarations-with-unitless-flex-basis-values-are-ignored\n      flex: 1 0 0%;\n      margin-bottom: 0;\n\n      + .card {\n        margin-left: 0;\n        border-left: 0;\n      }\n\n      // Handle rounded corners\n      @if $enable-rounded {\n        &:first-child {\n          @include border-right-radius(0);\n\n          .card-img-top,\n          .card-header {\n            border-top-right-radius: 0;\n          }\n          .card-img-bottom,\n          .card-footer {\n            border-bottom-right-radius: 0;\n          }\n        }\n\n        &:last-child {\n          @include border-left-radius(0);\n\n          .card-img-top,\n          .card-header {\n            border-top-left-radius: 0;\n          }\n          .card-img-bottom,\n          .card-footer {\n            border-bottom-left-radius: 0;\n          }\n        }\n\n        &:only-child {\n          @include border-radius($card-border-radius);\n\n          .card-img-top,\n          .card-header {\n            @include border-top-radius($card-border-radius);\n          }\n          .card-img-bottom,\n          .card-footer {\n            @include border-bottom-radius($card-border-radius);\n          }\n        }\n\n        &:not(:first-child):not(:last-child):not(:only-child) {\n          @include border-radius(0);\n\n          .card-img-top,\n          .card-img-bottom,\n          .card-header,\n          .card-footer {\n            @include border-radius(0);\n          }\n        }\n      }\n    }\n  }\n}\n\n\n//\n// Columns\n//\n\n.card-columns {\n  .card {\n    margin-bottom: $card-columns-margin;\n  }\n\n  @include media-breakpoint-up(sm) {\n    column-count: $card-columns-count;\n    column-gap: $card-columns-gap;\n\n    .card {\n      display: inline-block; // Don't let them vertically span multiple columns\n      width: 100%; // Don't let their width change\n    }\n  }\n}\n",
-			"file": "/C/Users/Lenny Lopes/AppData/Local/Temp/Temp2_bootstrap-4.0.0.zip/bootstrap-4.0.0/scss/_card.scss",
-			"file_size": 5693,
-			"file_write_time": 131607377880000000,
+			"file": "app/__init__.py",
 			"settings":
 			{
-				"buffer_size": 5693,
-				"line_ending": "Unix"
+				"buffer_size": 486,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/static/functions.js",
+			"settings":
+			{
+				"buffer_size": 297,
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "app/models.py",
 			"settings":
 			{
-				"buffer_size": 1359,
-				"encoding": "UTF-8",
+				"buffer_size": 1358,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/templates/alarm.html",
+			"file": "app/routes.py",
 			"settings":
 			{
-				"buffer_size": 1092,
+				"buffer_size": 3170,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/forms.py",
+			"file": "webapp.py",
 			"settings":
 			{
-				"buffer_size": 2112,
-				"encoding": "UTF-8",
+				"buffer_size": 164,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "notes.txt",
+			"file": "config.py",
 			"settings":
 			{
-				"buffer_size": 415,
+				"buffer_size": 310,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "tiefe: 42cm\nbreite: 40 cm\nhöhe: 55cm",
-			"settings":
-			{
-				"buffer_size": 36,
-				"line_ending": "Windows",
-				"name": "tiefe: 42cm"
 			}
 		}
 	],
-	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
 	"build_system_choices":
 	[
 		[
@@ -254,6 +256,58 @@
 				[
 					"Packages/LaTeXTools/LaTeX.sublime-build",
 					"Script Builder"
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				"XeLaTeX"
+			]
+		],
+		[
+			[
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Script Builder"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
 				]
 			],
 			[
@@ -366,37 +420,55 @@
 	"expanded_folders":
 	[
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp",
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app"
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates"
 	],
 	"file_history":
 	[
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/static/style.css",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/settings.html",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/index.html",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/forms.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/login.html",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/base.html",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/notes.txt",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/shared/ConceptReport/conceptreport.txt",
+		"/C/Users/Lenny Lopes/Desktop/project/app/hal_spi.c",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/shared/ConceptReport/latex/zhawDocument.tex",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/shared/ConceptReport/latex/zhawSetup.tex",
+		"/C/Users/Lenny Lopes/Desktop/iaeste/moeglicher-zeitraum.txt",
+		"/C/Users/Lenny Lopes/Desktop/ctflach7/timer.h",
+		"/C/Users/Lenny Lopes/Desktop/project/app/test.c",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/webapp.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/config.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/routes.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/sockets.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/static/sockets.js",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/socket.html",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/sockets",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/webapp",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/etp1-project/ConceptReport/conceptreport.txt",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/__init__.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/static/functions.js",
+		"/C/Users/Lenny Lopes/AppData/Local/Temp/Temp1_ws-webio.zip/ws-webio/ws-webio/server.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/alarm.html",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/models.py",
+		"/C/Users/Lenny Lopes/AppData/Local/Temp/Temp2_bootstrap-4.0.0.zip/bootstrap-4.0.0/scss/_card.scss",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask-websocket-io/socket.py",
 		"/C/Users/Lenny Lopes/Desktop/test.gcode",
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/index.html",
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/base.html",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/venv/Lib/site-packages/flask_wtf/form.py",
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/alarm.html",
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/static/style.css",
 		"/C/Users/Lenny Lopes/Desktop/C3D_xyzCalibration_cube.gcode",
 		"/C/Users/Lenny Lopes/Desktop/cetus_test.gcode",
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/models.py",
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/routes.py",
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/forms.py",
 		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/7/gallery/style.css",
 		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/7/gallery/index.html",
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/login.html",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/register.html",
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/settings.html",
 		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/7/landing-page/index.html",
 		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/7/landing-page/style.css",
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/__init__.py",
 		"/C/Users/Lenny Lopes/AppData/Local/Temp/Temp1_bootstrap-4.0.0.zip/bootstrap-4.0.0/scss/_card.scss",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/requirements.txt",
 		"/C/Users/Lenny Lopes/Desktop/models.py.bak.py",
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/webapp.py",
 		"/C/Users/Lenny Lopes/Desktop/forms.py",
 		"/C/Users/Lenny Lopes/Desktop/routes.py.bak.py",
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/config.py",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/venv/Lib/site-packages/sqlalchemy/sql/sqltypes.py",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/3/etp1/etp1-project/Documentation/latex/zhawDocument.tex",
 		"/C/Program Files/KiCad/share/kicad/library/device.lib",
@@ -480,24 +552,7 @@
 		"/C/Users/Lenny Lopes/Desktop/config.txt",
 		"/C/Users/Lenny Lopes/Desktop/flaskr/__init__.py",
 		"/C/Users/Lenny Lopes/Desktop/flaskr/MANIFEST.in",
-		"/C/Users/Lenny Lopes/Desktop/flaskr/setup.py",
-		"/C/Users/Lenny Lopes/Desktop/Sophia_owl.txt",
-		"/C/Users/Lenny Lopes/Desktop/final.txt",
-		"/C/Users/Lenny Lopes/Desktop/flaskr/flaskr/flaskr.py",
-		"/C/Users/Lenny Lopes/Desktop/logo.txt",
-		"/C/Users/Lenny Lopes/Desktop/flaskr/flaskr/schema.sql",
-		"/C/Users/Lenny Lopes/Desktop/final.jpg",
-		"/C/Users/Lenny Lopes/Google Drive/studies/semester/semester3/etp1/etp1-project/Documents/clusterwink_rev1_adjustments.txt",
-		"/C/Users/Lenny Lopes/Google Drive/private/projects/electronics/synth/notes.txt",
-		"/C/Users/Lenny Lopes/Google Drive/studies/semester/semester3/etp1/etp1-project/Documentation/todo.txt",
-		"/C/Users/Lenny Lopes/Desktop/flask/flaskhello.py",
-		"/C/Users/Lenny Lopes/Downloads/ddlc/DDLC-1.1.0-pc/characters/yuri.chr",
-		"/C/Users/Lenny Lopes/Google Drive/studies/semester/semester3/el3/script/el3-formulary/el3.tex",
-		"/C/Users/Lenny Lopes/Desktop/cmd.cmd",
-		"/C/Users/Lenny Lopes/Desktop/info.html",
-		"/C/Program Files/KiCad/share/kicad/template/module-template/meta/info.html",
-		"/C/Users/Lenny Lopes/Desktop/Desktop/el3/hhrt/6_Drehstrom/Uebungen/EL3_Ueb5_1_Drehstrom.tex",
-		"/C/Users/Lenny Lopes/Desktop/NO$GBA_2.6a/README.TXT"
+		"/C/Users/Lenny Lopes/Desktop/flaskr/setup.py"
 	],
 	"find":
 	{
@@ -515,6 +570,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"chapter",
+			"hardware",
+			"&",
+			"h1",
+			"round",
 			"width",
 			"round",
 			"content",
@@ -583,6 +643,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"section",
 			"day",
 			"main_menu_actions",
 			"card",
@@ -607,52 +668,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/C/Users/Lenny Lopes/AppData/Local/Temp/Temp2_bootstrap-4.0.0.zip/bootstrap-4.0.0/scss/_card.scss",
+					"file": "app/__init__.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5693,
+						"buffer_size": 486,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								354,
-								22
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/models.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1359,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1249,
-								1249
+								486,
+								486
 							]
 						],
 						"settings":
@@ -667,87 +700,53 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "app/templates/alarm.html",
+					"buffer": 1,
+					"file": "app/static/functions.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1092,
+						"buffer_size": 297,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								950,
-								950
+								9,
+								26
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 108.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "app/forms.py",
+					"buffer": 2,
+					"file": "app/models.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2112,
+						"buffer_size": 1358,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1835,
-								1835
+								603,
+								603
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 336.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 4,
-					"file": "notes.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 415,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								415,
-								415
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -757,34 +756,94 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 3,
+					"file": "app/routes.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 36,
+						"buffer_size": 3170,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								36,
-								36
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"auto_name": "tiefe: 42cm",
-							"default_dir": "C:\\Users\\Lenny Lopes\\Drive\\studies\\semester\\4\\etp2\\webapp\\cw-webapp",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/Python/Python.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "webapp.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 164,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "config.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 310,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								310,
+								310
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
+			]
+		},
+		{
+			"sheets":
+			[
 			]
 		}
 	],
@@ -794,7 +853,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 153.0
 	},
 	"layout":
 	{
@@ -816,7 +875,7 @@
 		"cols":
 		[
 			0.0,
-			0.758008658009,
+			0.591774891775,
 			1.0
 		],
 		"rows":

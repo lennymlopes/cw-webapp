@@ -37,21 +37,24 @@ class NewAlarmForm(FlaskForm):
 
 	hours = IntegerField('Hour', validators=[NumberRange(min=0, max=23),DataRequired()])
 	minutes = IntegerField('Minute', validators=[NumberRange(min=0, max=59),DataRequired()])
-	monday = BooleanField('Monday')
-	tuesday = BooleanField('Tuesday')
-	wednesday = BooleanField('Wednesday')
-	thursday = BooleanField('Thursday')
-	friday = BooleanField('Friday')
-	saturday = BooleanField('Saturday')
-	sunday = BooleanField('Sunday')
+	monday = BooleanField('M')
+	tuesday = BooleanField('T')
+	wednesday = BooleanField('W')
+	thursday = BooleanField('T')
+	friday = BooleanField('F')
+	saturday = BooleanField('S')
+	sunday = BooleanField('S')
 	repeat = BooleanField('Repeat')
 	label = StringField('Label')
 	submit = SubmitField('Save')
 
 class SettingsForm(FlaskForm):
-	theme = BooleanField('Theme')
-	advanced = BooleanField('Advanced Mode')
-	time_format = BooleanField('Time Format')
+	theme = BooleanField('Dark Theme')
+	stream = StringField('Webradio Link')
+	delete = SubmitField('Delete All Alarms')
+
+	# advanced = BooleanField('Advanced Mode')
+	#time_format = BooleanField('Time Format')
 	submit = SubmitField('Save')
 
 
