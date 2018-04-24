@@ -12,3 +12,10 @@ function random_bg_color() {
 function update(parameter, data) {
 	socket.emit('update', parameter, data)
 }
+
+function remove(id) {
+	var elem = document.getElementById(id);
+	elem.remove();
+	// document.getElementByID(id).remove();
+	socket.emit('update', id, "delete")
+}

@@ -37,7 +37,7 @@
 				
 	</div>
 	{% for alarm in alarms %}
-		<div class="col-lg-4 col-sm-6 ">
+		<div class="col-lg-4 col-sm-6 " id="{{alarm.id}}">
 			<div class="card">
 				<div class="card-body">
 					<div data-toggle="collapse" data-target="#card_{{ alarm.id }}" class="col-xs-8 col-sm-9" >
@@ -64,7 +64,7 @@
 							Repeat
 						</div>
 						
-							<button type="submit" class="btn-delete" onclick="update('alarm_{{alarm.id}}', 'delete')">
+							<button type="submit" class="btn-delete" onclick="remove('{{ alarm.id }}')">
 								<i class="glyphicon glyphicon-trash"></i>
 
 							</button>
