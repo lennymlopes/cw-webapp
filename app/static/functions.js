@@ -17,5 +17,5 @@ function remove(id) {
 	var elem = document.getElementById(id);
 	elem.remove();
 	// document.getElementByID(id).remove();
-	socket.emit('update', id, "delete")
+	socket.emit('delete_alarm', id)
 }
