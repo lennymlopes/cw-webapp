@@ -18,9 +18,18 @@ def get_all():
 def get_next():
 	alarms = get_all()
 	now = datetime.datetime.now()
+	now = now.hour*3600+now.minute*60
+	alarm_list = []
 	if not alarms:
 		print('no alarms')
 		return
 	else:
 		for alarm in alarms:
-			print(str(alarm.hour) + ':' + str(alarm.minute))
+			alarm_list.append(alarm.time)
+	alarm_list.sort()
+	if max(alarm_list) < now:	# if next alarm is on new day
+		print('Next alarm: ' + str(datetime.timedelta(seconds=min(alarm_list))))
+	else:
+		for alarm in alarm_list:
+			if now < alarm:
+				print('Next alarm: ' + str(datetime.timedelta(seconds=alarm)))

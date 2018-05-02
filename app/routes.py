@@ -55,7 +55,8 @@ def logout():
 def new():
 	form = NewAlarmForm()
 	if form.validate_on_submit():
-		alarm = Alarm(hour=form.hours.data,\
+		alarm = Alarm(time=(form.hours.data*3600+form.minutes.data*60),\
+									hour=form.hours.data,\
 									minute=form.minutes.data,\
 									repeat=form.repeat.data,\
 									label=form.label.data,\
