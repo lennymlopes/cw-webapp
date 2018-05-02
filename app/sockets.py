@@ -16,4 +16,4 @@ def delete(id):
 
 @socketio.on('set_color')
 def set_color(color, value):
-		print('SPI send: 'color + ' set to ' + value)
+		print('SPI send: ' + color + ' set to ' + value)
