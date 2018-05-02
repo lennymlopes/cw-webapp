@@ -168,10 +168,19 @@
 	"buffers":
 	[
 		{
-			"file": "webapp.py",
+			"file": "app/sockets.py",
 			"settings":
 			{
-				"buffer_size": 164,
+				"buffer_size": 367,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/models.py",
+			"settings":
+			{
+				"buffer_size": 1358,
 				"line_ending": "Windows"
 			}
 		},
@@ -179,16 +188,24 @@
 			"file": "app/__init__.py",
 			"settings":
 			{
-				"buffer_size": 570,
+				"buffer_size": 632,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/sockets.py",
+			"file": "requirements.txt",
 			"settings":
 			{
-				"buffer_size": 185,
+				"buffer_size": 632,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "webapp.py",
+			"settings":
+			{
+				"buffer_size": 239,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -197,16 +214,7 @@
 			"file": "app/static/functions.js",
 			"settings":
 			{
-				"buffer_size": 376,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/templates/base.html",
-			"settings":
-			{
-				"buffer_size": 2406,
+				"buffer_size": 533,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -215,18 +223,26 @@
 			"file": "app/templates/index.html",
 			"settings":
 			{
-				"buffer_size": 4771,
+				"buffer_size": 4775,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/static/style.css",
+			"file": "venv/Lib/site-packages/dominate/document.py",
 			"settings":
 			{
-				"buffer_size": 5312,
+				"buffer_size": 2217,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "venv/Lib/site-packages/werkzeug/urls.py",
+			"settings":
+			{
+				"buffer_size": 36764,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -444,8 +460,11 @@
 	],
 	"file_history":
 	[
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/static/functions.js",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/static/style.css",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/base.html",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/__init__.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/webapp.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/static/functions.js",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/websockets/sockets.py",
 		"/C/Users/Lenny Lopes/Desktop/webapp-sockets/.gitignore",
 		"/C/Users/Lenny Lopes/Desktop/webapp-sockets/app/__init__.py",
@@ -453,8 +472,6 @@
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/forms.py",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/routes.py",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/sockets.py",
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/webapp.py",
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/base.html",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/app-sockets/sockets.py",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/app-sockets/templates/index.html",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/app-sockets/routes.py",
@@ -464,7 +481,6 @@
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/config.py",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/index.html",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/models.py",
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/static/style.css",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/settings.html",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/login.html",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/notes.txt",
@@ -690,16 +706,44 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "webapp.py",
+					"file": "app/sockets.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 164,
+						"buffer_size": 367,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								367,
+								367
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1358,
 						"regions":
 						{
 						},
@@ -718,24 +762,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
+					"buffer": 2,
 					"file": "app/__init__.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 570,
+						"buffer_size": 632,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								570,
-								570
+								632,
+								571
 							]
 						],
 						"settings":
@@ -746,24 +790,52 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "app/sockets.py",
-					"semi_transient": false,
+					"buffer": 3,
+					"file": "requirements.txt",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 185,
+						"buffer_size": 632,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								185,
-								185
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "webapp.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 239,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								222,
+								222
 							]
 						],
 						"settings":
@@ -778,20 +850,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 5,
 					"file": "app/static/functions.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 376,
+						"buffer_size": 533,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								371,
-								371
+								533,
+								533
 							]
 						],
 						"settings":
@@ -802,91 +874,91 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/templates/base.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2406,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								704,
-								704
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 648.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/templates/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4771,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1245,
-								1245
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 432.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
 					"buffer": 6,
-					"file": "app/static/style.css",
+					"file": "app/templates/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5312,
+						"buffer_size": 4775,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4234,
-								4234
+								1270,
+								1270
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax"
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 8592.0,
+						"translation.y": 3727.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "venv/Lib/site-packages/dominate/document.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2217,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								793,
+								793
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "venv/Lib/site-packages/werkzeug/urls.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 36764,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2993,
+								2993
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2204.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
 					"type": "text"
 				}
 			]

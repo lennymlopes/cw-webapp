@@ -13,3 +13,7 @@ def delete(id):
 		Alarm.query.filter_by(id=int(id)).delete()
 		db.session.commit()
 		print('Alarm ' + id + ' deleted')
+
+@socketio.on('set_color')
+def set_color(color, value):
+		print('SPI send: 'color + ' set to ' + value)

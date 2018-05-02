@@ -19,3 +19,8 @@ function remove(id) {
 	// document.getElementByID(id).remove();
 	socket.emit('delete_alarm', id)
 }
+
+function set_color(color, value) {
+	socket.emit('set_color', color, value)
+}
+
