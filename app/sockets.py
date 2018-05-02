@@ -1,5 +1,5 @@
 from flask_socketio import SocketIO, emit
-from app import app, db
+from app import app, db, alarms
 from app.models import Alarm
 
 socketio = SocketIO(app)
@@ -17,3 +17,4 @@ def delete(id):
 @socketio.on('set_color')
 def set_color(color, value):
 		print('SPI send: ' + color + ' set to ' + value)
+		alarms.get_next()
