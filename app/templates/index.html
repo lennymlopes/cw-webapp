@@ -16,7 +16,7 @@
 						</div>
 						<div class="col-xs-4 col-sm-3" align="right">
 							<label class="switch">
-								<input type="checkbox" onchange="update('Moodlight', 'toggle')">
+								<input type="checkbox" onchange="update(None, 'moodlight', 'toggle')">
 								<span class="slider round"></span>
 							</label>
 						</div>
@@ -45,7 +45,7 @@
 					</div>
 					<div class="col-xs-4 col-sm-3" align="right">
 						<label class="switch">
-							<input type="checkbox" onchange="update('alarm_{{alarm.id}}', 'toggle')"
+							<input type="checkbox" onchange="update('{{alarm.id}}', 'on', 'toggle')"
 							{% if alarm.active is sameas true %} checked {% endif %}
 							>
 							<span class="slider round"></span>
@@ -56,7 +56,7 @@
 						<h3 class="mtop0">{{ alarm.label if alarm.label else 'Alarm' }}</h3>
 						<div>
 							<div class="repeat-checkbox">
-								<input type="checkbox" id="repeat_{{ alarm.id }}" onchange="update('alarm_{{alarm.id}}_repeat', 'toggle')"
+								<input type="checkbox" id="repeat_{{ alarm.id }}" onchange="update('{{alarm.id}}','repeat', 'toggle')"
 								{% if alarm.repeat is sameas true %} checked {% endif %}
 								 />
 								<label for="repeat_{{ alarm.id }}"></label>
@@ -75,49 +75,49 @@
 
 
 						<div class="day-checkbox">
-								<input type="checkbox" id="monday_{{ alarm.id }}" onchange="update('a_{{alarm.id}}_monday', 'toggle')" 
+								<input type="checkbox" id="monday_{{ alarm.id }}" onchange="update('{{alarm.id}}','monday', 'toggle')" 
 								{% if alarm.monday is sameas true %} checked {% endif %}
 								 />
 								<label for="monday_{{ alarm.id }}">M</label>
 						</div>
 
 						<div class="day-checkbox">
-								<input type="checkbox" id="tuesday_{{ alarm.id }}" onchange="update('a_{{alarm.id}}_tuesday', 'toggle')"
+								<input type="checkbox" id="tuesday_{{ alarm.id }}" onchange="update('{{alarm.id}}','tuesday', 'toggle')"
 								{% if alarm.tuesday is sameas true %} checked {% endif %}
 								 />
 								<label for="tuesday_{{ alarm.id }}">T</label>
 						</div>
 
 						<div class="day-checkbox">
-								<input type="checkbox" id="wednesday_{{ alarm.id }}" onchange="update('a_{{alarm.id}}_wednesday', 'toggle')"
+								<input type="checkbox" id="wednesday_{{ alarm.id }}" onchange="update('{{alarm.id}}','wednesday', 'toggle')"
 								{% if alarm.wednesday is sameas true %} checked {% endif %}
 								 />
 								<label for="wednesday_{{ alarm.id }}">W</label>
 						</div>
 
 						<div class="day-checkbox">
-								<input type="checkbox" id="thursday_{{ alarm.id }}" onchange="update('a_{{alarm.id}}_thursday', 'toggle')"
+								<input type="checkbox" id="thursday_{{ alarm.id }}" onchange="update('{{alarm.id}}','thursday', 'toggle')"
 								{% if alarm.thursday is sameas true %} checked {% endif %}
 								 />
 								<label for="thursday_{{ alarm.id }}">T</label>
 						</div>
 
 						<div class="day-checkbox">
-								<input type="checkbox" id="friday_{{ alarm.id }}" onchange="update('a_{{alarm.id}}_friday', 'toggle')"
+								<input type="checkbox" id="friday_{{ alarm.id }}" onchange="update('{{alarm.id}}','friday', 'toggle')"
 								{% if alarm.friday is sameas true %} checked {% endif %}
 								 />
 								<label for="friday_{{ alarm.id }}">F</label>
 						</div>
 
 						<div class="day-checkbox">
-								<input type="checkbox" id="saturday_{{ alarm.id }}" onchange="update('a_{{alarm.id}}_saturday', 'toggle')"
+								<input type="checkbox" id="saturday_{{ alarm.id }}" onchange="update('{{alarm.id}}','saturday', 'toggle')"
 								{% if alarm.saturday is sameas true %} checked {% endif %}
 								 />
 								<label for="saturday_{{ alarm.id }}">S</label>
 						</div>
 
 						<div class="day-checkbox">
-								<input type="checkbox" id="sunday_{{ alarm.id }}" onchange="update('a_{{alarm.id}}_sunday', 'toggle')"
+								<input type="checkbox" id="sunday_{{ alarm.id }}" onchange="update('{{alarm.id}}','sunday', 'toggle')"
 								{% if alarm.sunday is sameas true %} checked {% endif %}
 								 />
 								<label for="sunday_{{ alarm.id }}">S</label>

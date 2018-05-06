@@ -20,6 +20,7 @@ def get_next():
 	now = datetime.datetime.now()
 	now = now.hour*3600+now.minute*60
 	alarm_list = []
+	print(datetime.datetime.today().weekday())
 	if not alarms:
 		print('no alarms')
 		return

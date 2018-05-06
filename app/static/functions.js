@@ -9,8 +9,8 @@ function random_bg_color() {
     }
 
 
-function update(parameter, data) {
-	socket.emit('update', parameter, data)
+function update(id, parameter, data) {
+	socket.emit('update', id, parameter, data)
 }
 
 function remove(id) {

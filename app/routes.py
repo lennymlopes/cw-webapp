@@ -69,8 +69,8 @@ def new():
 									sunday=form.sunday.data)
 		db.session.add(alarm)
 		db.session.commit()
-		flash('New alarm "{}"added at {}:{}, on '.format(
-			form.label.data, form.hours.data, form.minutes.data))
+		# flash('New alarm "{}"added at {}:{}, on '.format(
+		# 	form.label.data, form.hours.data, form.minutes.data))
 		return redirect(url_for('index'))
 	return render_template('alarm.html', title='Add Alarms', form=form)
 
