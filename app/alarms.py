@@ -19,22 +19,39 @@ def check_for_alarms():
 	alarms = get_all()
 	number = 0
 	today = datetime.datetime.today().weekday()
+
 	if(today == 0):
 		for alarm in alarms:
-			if (alarm.monday):
-				return True
-			else:
-				return False
-	if(today == 6):
+			if(alarm.monday):
+				number += 1
+	elif(today == 1):
+		for alarm in alarms:
+			if(alarm.tuesday):
+				number += 1
+	elif(today == 2):
+		for alarm in alarms:
+			if(alarm.wednesday):
+				number += 1
+	elif(today == 3):
+		for alarm in alarms:
+			if(alarm.thursday):
+				number += 1
+	elif(today == 4):
+		for alarm in alarms:
+			if(alarm.friday):
+				number += 1
+	elif(today == 5):
+		for alarm in alarms:
+			if(alarm.saturday):
+				number += 1
+	elif(today == 6):
 		for alarm in alarms:
 			if(alarm.sunday):
 				number += 1
 		
-		if(number):
-			print('Today are ' + str(number) + ' alarms')
+		if(number):		#if there are more than zero alarms
 			return True
-		else:
-			print('No alarms today')
+		else:					# if there are zero alarms
 			return False
 
 
