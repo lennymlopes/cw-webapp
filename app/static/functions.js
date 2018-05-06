@@ -24,3 +24,15 @@ function set_color(color, value) {
 	socket.emit('set_color', color, value)
 }
 
+// var socket = io('http://localhost');
+// socket.on('update', function (parameter, data) {
+//     console.log(parameter, data);
+    
+//     if(parameter=='moodlight'){
+//     	if(data){
+//     		document.getElementById("moodlight_checkbox").checked = true;
+//     	} else{
+//     		document.getElementById("moodlight_checkbox").checked = false;
+//     	}
+//     }
+//   });

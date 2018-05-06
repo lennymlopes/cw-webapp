@@ -49,4 +49,9 @@ def delete(id):
 def set_color(color, value):
 		print('SPI send: ' + color + ' set to ' + value)
 		alarms.get_next()
+		alarms.check_for_alarms()
 
+@socketio.on('check')
+def check(id, parameter):
+	if(parameter == 'moodlight'):
+		emit('update', 'moodlight', moodlight)

@@ -15,6 +15,29 @@ def get_all():
 		# print(alarm.hour + ':' + alarm.minute)
 	return alarms
 
+def check_for_alarms():
+	alarms = get_all()
+	number = 0
+	today = datetime.datetime.today().weekday()
+	if(today == 0):
+		for alarm in alarms:
+			if (alarm.monday):
+				return True
+			else:
+				return False
+	if(today == 6):
+		for alarm in alarms:
+			if(alarm.sunday):
+				number += 1
+		
+		if(number):
+			print('Today are ' + str(number) + ' alarms')
+			return True
+		else:
+			print('No alarms today')
+			return False
+
+
 def get_next():
 	alarms = get_all()
 	now = datetime.datetime.now()
