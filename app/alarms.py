@@ -60,9 +60,13 @@ def check_for_alarms():
 		print('Alarm on new Day')
 		return(False)
 	else:
+		print(now, alarm.time)
 		for alarm in alarm_list:
 			if now < alarm:
 				print('Next alarm: ' + str(datetime.timedelta(seconds=alarm)))
 				return datetime.timedelta(seconds=alarm)
+			elif now == alarm:
+				print('SPI send: start alarm')
+
 
 
