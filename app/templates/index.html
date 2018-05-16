@@ -16,22 +16,22 @@
 						</div>
 						<div class="col-xs-4 col-sm-3" align="right">
 							<label class="switch">
-								<input type="checkbox" id='moodlight_checkbox' onchange="update(0, 'moodlight', 'toggle')">
+								<input type="checkbox" id='moodlight_checkbox' onchange="toggle_moodlight()">
 								<span class="slider round"></span>
 							</label>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-xs-3">Red</div>
-						<div class="range-container col-xs-9"> <input type="range" min="0" max="255" value="0" id="red" onchange="set_color('Red', this.value)"></div>
+						<div class="range-container col-xs-9"> <input type="range" min="0" max="255" value="0" id="red" onchange="set_color('red', this.value)"></div>
 					</div>
 					<div class="row">
 						<div class="col-xs-3">Green</div>
-						<div class="range-container col-xs-9"> <input type="range" min="0" max="255" value="0" id="green" onchange="set_color('Green', this.value)"></div>
+						<div class="range-container col-xs-9"> <input type="range" min="0" max="255" value="0" id="green" onchange="set_color('green', this.value)"></div>
 					</div>
 					<div class="row">
 						<div class="col-xs-3">Blue</div>
-						<div class="range-container col-xs-9"> <input type="range" min="0" max="255" value="0" id="blue" onchange="set_color('Blue', this.value)"></div>
+						<div class="range-container col-xs-9"> <input type="range" min="0" max="255" value="0" id="blue" onchange="set_color('blue', this.value)"></div>
 					</div>
 				</div>
 				

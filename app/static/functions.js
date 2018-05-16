@@ -20,9 +20,26 @@ function remove(id) {
 	socket.emit('delete_alarm', id)
 }
 
+function toggle_moodlight(){
+	socket.emit('moodlight')
+}
+
 function set_color(color, value) {
 	socket.emit('set_color', color, value)
 }
+
+// socket.on('update', (parameter, data)) {
+// 	if(parameter == 'moodlight'){
+// 		if(data){
+// 			document.getElementById("moodlight_checkbox").checked = true;
+// 		} else {
+// 			document.getElementById("moodlight_checkbox").checked = false;
+// 		}
+		
+// 	}
+// }
+
+window.onload = update(1, 'moodlight', 1)
 
 // var socket = io('http://localhost');
 // socket.on('update', function (parameter, data) {
