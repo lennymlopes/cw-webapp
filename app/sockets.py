@@ -4,9 +4,9 @@ from app.models import Alarm
 
 socketio = SocketIO(app)
 
-red = 0
-green = 0
-blue = 0
+red = 1
+green = 1
+blue = 1
 state = 0
 
 moodlight = False
@@ -69,7 +69,9 @@ def delete(id):
 
 @socketio.on('set_color')
 def set_color(color, value):
-	value = int(value)
+	value = int(value)+1
+	if(value>255):
+		value = 255
 	global red, green, blue
 	if (color == "red"):
 		red = value
