@@ -44,7 +44,7 @@ def update(id, parameter, data):
 
 @socketio.on('moodlight')
 def moodlight_enable():
-	global moodlight
+	global moodlight, red, green, blue
 	# global state
 	moodlight = not moodlight
 	if (moodlight):

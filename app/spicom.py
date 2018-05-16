@@ -3,7 +3,10 @@ import RPi.GPIO as GPIO
 import spidev
 import time
 
+spi = 0
+
 def init_spi():
+	global spi
 	spi = spidev.SpiDev()
 	spi.open(0,1)
 	spi.max_speed_hz = 100000
@@ -34,6 +37,7 @@ def CRC8(dataList,initial=0,poly=0x07):
 	return crc
 
 def writeCommand(dataList):
+	global spi
 	dataList = [len(dataList)+2]+dataList
 	dataList.append(CRC8(dataList))
 	# print("spi packet: ",[hex(x) for x in dataList])
@@ -42,6 +46,7 @@ def writeCommand(dataList):
 	GPIO.output(8,GPIO.HIGH)
 
 def readCommand(command):
+	global spi
 	dataList = [1,command,0,0]
 	recList = []
 	GPIO.output(8,GPIO.LOW)
