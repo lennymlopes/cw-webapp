@@ -44,7 +44,7 @@ class NewAlarmForm(FlaskForm):
 	friday = BooleanField('F')
 	saturday = BooleanField('S')
 	sunday = BooleanField('S')
-	repeat = BooleanField('Repeat')
+	repeat = BooleanField('Weekly Repeat')
 	label = StringField('Label')
 	submit = SubmitField('Save')
 
