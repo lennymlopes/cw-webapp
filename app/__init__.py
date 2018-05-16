@@ -6,6 +6,8 @@ from flask_login import LoginManager
 from flask_bootstrap import Bootstrap
 from flask_socketio import SocketIO
 
+
+
 import sched, time, threading
 s = sched.scheduler(time.time, time.sleep)
 
@@ -29,8 +31,10 @@ bootstrap = Bootstrap(app)
 # socketio 
 socketio = SocketIO(app)
 
-from app import routes, models, sockets, alarms
+from app import routes, models, sockets, alarms, spicom
 
+
+spicom.init_spi()
 
 def thread_check_for_alarms():
 	alarms.check_for_alarms()

@@ -1,5 +1,5 @@
 from flask_socketio import SocketIO, emit
-from app import app, db, alarms
+from app import app, db, alarms, spicom
 from app.models import Alarm
 
 socketio = SocketIO(app)
@@ -48,11 +48,13 @@ def moodlight_enable():
 	# global state
 	moodlight = not moodlight
 	if (moodlight):
+		spicom.writeCommand([0x32,red,green,blue])
 		print('SPI send: Moodlight on:'\
 								+ '\n RED:\t' + str(red)\
 								+ '\n GREEN:\t' + str(green)\
 								+ '\n BLUE:\t' + str(blue))
 	else:
+		spicom.writeCommand([0x31])
 		print('Moodlight off')
 		print('SPI send: Moodlight off:'\
 								+ '\n RED:\t' + str(0)\
@@ -75,11 +77,13 @@ def set_color(color, value):
 	elif (color == "blue"):
 		blue = value
 	if(moodlight):
+		spicom.writeCommand([0x32,red,green,blue])
 		print('SPI send: ' + color + ' updated:'\
 									+ '\n RED:\t' + str(red)\
 									+ '\n GREEN:\t' + str(green)\
 									+ '\n BLUE:\t' + str(blue))
 	else:
+		spicom.writeCommand([0x31])
 		print('SPI send: Moodlight off:'\
 								+ '\n RED:\t' + str(0)\
 								+ '\n GREEN:\t' + str(0)\
