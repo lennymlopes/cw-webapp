@@ -187,7 +187,16 @@
 			"file": "app/sockets.py",
 			"settings":
 			{
-				"buffer_size": 1451,
+				"buffer_size": 2127,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/templates/index.html",
+			"settings":
+			{
+				"buffer_size": 4793,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -196,7 +205,7 @@
 			"file": "app/static/functions.js",
 			"settings":
 			{
-				"buffer_size": 1304,
+				"buffer_size": 1362,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -206,79 +215,6 @@
 			"settings":
 			{
 				"buffer_size": 2406,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/alarms.py",
-			"settings":
-			{
-				"buffer_size": 1701,
-				"encoding": "UTF-8",
-				"line_ending": "Windows",
-				"name": "from app import db"
-			}
-		},
-		{
-			"file": "app/__init__.py",
-			"settings":
-			{
-				"buffer_size": 862,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "webapp.py",
-			"settings":
-			{
-				"buffer_size": 250,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/models.py",
-			"settings":
-			{
-				"buffer_size": 1401,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "config.py",
-			"settings":
-			{
-				"buffer_size": 310,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/routes.py",
-			"settings":
-			{
-				"buffer_size": 3234,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/templates/alarm.html",
-			"settings":
-			{
-				"buffer_size": 1113,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/templates/index.html",
-			"settings":
-			{
-				"buffer_size": 4807,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -498,10 +434,15 @@
 	],
 	"file_history":
 	[
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/forms.py",
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/static/functions.js",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/alarms.py",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/__init__.py",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/webapp.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/models.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/config.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/routes.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/alarm.html",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/forms.py",
+		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/static/functions.js",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/venv/Lib/site-packages/werkzeug/urls.py",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/venv/Lib/site-packages/dominate/document.py",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/static/style.css",
@@ -510,7 +451,6 @@
 		"/C/Users/Lenny Lopes/Desktop/webapp-sockets/.gitignore",
 		"/C/Users/Lenny Lopes/Desktop/webapp-sockets/app/__init__.py",
 		"/C/Users/Lenny Lopes/Desktop/webapp-sockets/app/routes.py",
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/routes.py",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/sockets.py",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/app-sockets/sockets.py",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/app-sockets/templates/index.html",
@@ -518,9 +458,7 @@
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/app-sockets/__init__.py",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/app-sockets/.gitignore",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/websockets/templates/index.html",
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/config.py",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/index.html",
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/models.py",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/settings.html",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/login.html",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/notes.txt",
@@ -537,7 +475,6 @@
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/webapp",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/etp1-project/ConceptReport/conceptreport.txt",
 		"/C/Users/Lenny Lopes/AppData/Local/Temp/Temp1_ws-webio.zip/ws-webio/ws-webio/server.py",
-		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/webapp/cw-webapp/app/templates/alarm.html",
 		"/C/Users/Lenny Lopes/AppData/Local/Temp/Temp2_bootstrap-4.0.0.zip/bootstrap-4.0.0/scss/_card.scss",
 		"/C/Users/Lenny Lopes/Drive/studies/semester/4/etp2/flask-websocket-io/socket.py",
 		"/C/Users/Lenny Lopes/Desktop/test.gcode",
@@ -624,8 +561,7 @@
 		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/5/stylesheet.css",
 		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/5/specificity.html",
 		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/5/selector.html",
-		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/specificity.html",
-		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/units/4/table.html"
+		"/C/Users/Lenny Lopes/Drive/private/projects/web/webdev-bootcamp/specificity.html"
 	],
 	"find":
 	{
@@ -754,23 +690,24 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1451,
+						"buffer_size": 2127,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1343,
-								1343
+								2126,
+								2126
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 2
 						},
 						"translation.x": 0.0,
-						"translation.y": 270.0,
+						"translation.y": 771.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -778,19 +715,47 @@
 				},
 				{
 					"buffer": 1,
-					"file": "app/static/functions.js",
+					"file": "app/templates/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1304,
+						"buffer_size": 4793,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								620,
-								620
+								533,
+								533
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 45.2,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/static/functions.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1362,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								552,
+								570
 							]
 						],
 						"settings":
@@ -801,11 +766,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "app/templates/base.html",
 					"semi_transient": false,
 					"settings":
@@ -826,235 +791,10 @@
 							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 630.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/alarms.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1701,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1450,
-								1450
-							]
-						],
-						"settings":
-						{
-							"auto_name": "from app import db",
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/__init__.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 862,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								729,
-								729
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 90.0,
+						"translation.y": 585.2,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "webapp.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 250,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								247,
-								236
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/models.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1401,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1065,
-								1065
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "config.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 310,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								310,
-								310
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "app/routes.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3234,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1943,
-								1943
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1466.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "app/templates/alarm.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1113,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								330,
-								330
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "app/templates/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4807,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								841,
-								841
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 135.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
 					"type": "text"
 				}
 			]
