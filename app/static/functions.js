@@ -28,9 +28,9 @@ function set_color(color, value) {
 	socket.emit('set_color', color, value)
 }
 
-function moodlight_off() {
-	socket.emit('moodlight_off')
-}
+// function moodlight_off() {
+// 	socket.emit('moodlight_off')
+// }
 
 function alarm_off() {
 	socket.emit('alarm_off')
@@ -51,7 +51,7 @@ function alarm_on() {
 // 	}
 // }
 
-window.onload = moodlight_off()
+// window.onload = moodlight_off()
 
 
 // var socket = io('http://localhost');

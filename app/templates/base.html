@@ -65,6 +65,11 @@
 		socket.on('connect', function() {
 			socket.emit('my event', {data: 'I\'m connected!'});
 		});
+
+		function moodlight_off() {
+			socket.emit('moodlight_off')
+		}
+		window.onload = moodlight_off()
 	</script>
 {% endblock %}
 
