@@ -91,3 +91,24 @@ def set_color(color, value):
 								+ '\n RED:\t' + str(0)\
 								+ '\n GREEN:\t' + str(0)\
 								+ '\n BLUE:\t' + str(0))
+
+@socketio.on('moodlight_off')
+def moodlight_off():
+	global moodlight
+	moodlight = 0
+	print('Moodlight Off')
+	spicom.writeCommand([0x31])
+
+@socketio.on('alarm_off')
+def alarm_off():
+	print('Alarm Off')
+	spicom.writeCommand([0x14])
+	spicom.writeCommand([0x13, 0])
+	spicom.writeCommand([0x12])
+
+@socketio.on('alarm_on')
+def alarm_on():
+	print('Alarm On')
+	spicom.writeCommand([0x11])
+	spicom.writeCommand([0x13, 0])
+	spicom.writeCommand([0x15, 0, 10, 1])

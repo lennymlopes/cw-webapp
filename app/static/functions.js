@@ -28,6 +28,18 @@ function set_color(color, value) {
 	socket.emit('set_color', color, value)
 }
 
+function moodlight_off() {
+	socket.emit('moodlight_off')
+}
+
+function alarm_off() {
+	socket.emit('alarm_off')
+}
+
+function alarm_on() {
+	socket.emit('alarm_on')
+}
+
 // socket.on('update', (parameter, data)) {
 // 	if(parameter == 'moodlight'){
 // 		if(data){
@@ -39,7 +51,8 @@ function set_color(color, value) {
 // 	}
 // }
 
-window.onload = update(1, 'moodlight', 1)
+window.onload = moodlight_off()
+
 
 // var socket = io('http://localhost');
 // socket.on('update', function (parameter, data) {
