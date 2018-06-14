@@ -69,7 +69,7 @@
 		function moodlight_off() {
 			socket.emit('moodlight_off')
 		}
-		window.onload = moodlight_off()
+		window.onbeforeunload = moodlight_off()
 	</script>
 {% endblock %}
 

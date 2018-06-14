@@ -330,3 +330,12 @@ input:checked + .slider:before {
 .range-container input::-webkit-slider-thumb #blue {
 	background: blue;
 }*/
+
+
+.buttonbox {
+display: flex;
+justify-content: center; 
+
+.btn-lg {
+padding: 50px 60px;
+}
