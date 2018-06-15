@@ -70,8 +70,8 @@ def delete(id):
 @socketio.on('set_color')
 def set_color(color, value):
 	value = int(value)+1
-	if(value>255):
-		value = 255
+	if(value>250):
+		value = 250
 	global red, green, blue
 	if (color == "red"):
 		red = value
