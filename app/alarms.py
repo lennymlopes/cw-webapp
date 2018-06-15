@@ -2,6 +2,7 @@ from app import db, spicom
 import datetime
 from app.models import Alarm
 from enum import Enum
+import pytz
 
 class time:
     def __init__(self):
@@ -10,8 +11,10 @@ class time:
 
 
 def check_for_alarms():
+	
 	today = datetime.datetime.today().weekday()
-	now = datetime.datetime.now()
+	tz = pytz.timezone('Europe/Zurich')
+	now = datetime.datetime.now(tz)
 	now = now.hour*3600+now.minute*60
 	alarms = Alarm.query.all()
 	alarm_list = []
