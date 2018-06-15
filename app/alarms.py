@@ -1,4 +1,4 @@
-from app import db
+from app import db, spicom
 import datetime
 from app.models import Alarm
 from enum import Enum
