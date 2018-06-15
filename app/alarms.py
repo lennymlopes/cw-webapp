@@ -67,6 +67,9 @@ def check_for_alarms():
 				return datetime.timedelta(seconds=alarm)
 			elif now == alarm:
 				print('SPI send: start alarm')
+				spicom.writeCommand([0x11])
+				spicom.writeCommand([0x13, 0])
+				spicom.writeCommand([0x15, 0, 10, 1])
 
 
 
