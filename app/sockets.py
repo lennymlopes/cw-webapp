@@ -95,9 +95,9 @@ def set_color(color, value):
 @socketio.on('moodlight_off')
 def moodlight_off():
 	global moodlight, red, green, blue
-	red = 0
-	green = 0
-	blue = 0
+	red = 1
+	green = 1
+	blue = 1
 	moodlight = 0
 	print('Moodlight Off')
 	spicom.writeCommand([0x31])
